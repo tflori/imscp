@@ -4,8 +4,11 @@
 Git 1.1.x
 ------------------------------------------------------------------------------------------------------------------------
 
-BACKEND:
+BACKEND
 	Fixed: Invalid argument at /usr/share/perl5/MIME/Entity.pm line 1878 ( autoreply script )
+
+TICKETS
+	Fixed #IP-1267: Double-quotes in the Dovecot SQL user's password must be escaped
 
 ------------------------------------------------------------------------------------------------------------------------
 1.1.22
