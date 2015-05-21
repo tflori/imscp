@@ -37,8 +37,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-05-16 17:03+0200\n"
-"PO-Revision-Date: 2015-05-16 15:06+0000\n"
+"POT-Creation-Date: 2015-05-22 01:01+0200\n"
+"PO-Revision-Date: 2015-05-21 23:04+0000\n"
 "Last-Translator: Laurent Declercq <l.declercq@nuxwin.com>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/i-MSCP/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -117,7 +117,7 @@ msgid ""
 "Statistics: http://{USERNAME}/stats/ (Same username and password than above)\n"
 "\n"
 "Thank you for using our services.\n"
-msgstr ""
+msgstr "\nHallo {NAME},\n\nEin neues Konto wurde für Sie erstellt.\n\nIhre Kontodaten:\n\nBenutzerrolle: {USERTYPE}\nName: {USERNAME}\nPasswort: {PASSWORD}\n\nAus Sicherheitsgründen ist es wichtig, das Sie ihr Passwort nach der ersten Anmeldung ändern. Bitte ändern Sie zusätzlich regelmäßig ihr Passwort.\n\nSie können sich hier anmelden: {BASE_SERVER_VHOST_PREFIX}{BASE_SERVER_VHOST}:{BASE_SERVER_VHOST_PORT}\n\n\nStatistik: http://{USERNAME}/stats/ (Verwenden Sie die oben genannten Zugangsdaten) \n\n\nVielen Dank für Ihre Anmeldung.\n"
 
 msgid ""
 "\n"
@@ -2287,7 +2287,7 @@ msgstr "Aktiviert"
 
 #, php-format
 msgid "Enabled for: %s"
-msgstr ""
+msgstr "Aktiviert für: %s"
 
 msgid ""
 "Entries associated to your external mail servers were not found. A "
@@ -3814,14 +3814,14 @@ msgid ""
 msgstr "Plugin Manager: Das %s Plugin kann nicht gelöscht werden. Führen Sie folgendes Sript aus und versuchen Sie es erneut -> set-gui-permissions.pl "
 
 #, php-format
-msgid ""
-"Plugin Manager: Unable to delete the %s plugin. Plugin has been locked by "
-"another plugin."
-msgstr "Plugin Manager: Das Plugin %s konnte nicht gelöscht werden, da es für ein anderes Plugin benötigt wird."
-
-#, php-format
 msgid "Plugin Manager: Unable to load plugin %s"
 msgstr "Plugin Manager: Konnte das Plugin %s nicht laden."
+
+#, php-format
+msgid ""
+"Plugin Manager: Unable to uninsntall the %s plugin. Plugin has been locked "
+"by another plugin."
+msgstr ""
 
 #, php-format
 msgid "Plugin Manager: Unable to update the %s plugin: %s"
@@ -5084,12 +5084,12 @@ msgid "URL to this admin panel"
 msgstr "URL zu dieser Administrationsoberfläche"
 
 #, php-format
-msgid "Unable to %s the %s plugin: %s"
-msgstr "Funktion %s bei Plugin %s nicht möglich: %s"
-
-#, php-format
 msgid "Unable to backup %s plugin directory."
 msgstr "Backup von %s Plugin-Verzeichnis unmöglich."
+
+#, php-format
+msgid "Unable to change the %s plugin: %s"
+msgstr "Das %s plugin konnte nicht verändert werden: %s"
 
 #, php-format
 msgid "Unable to close the ticket with Id '%s'."
@@ -5108,6 +5108,14 @@ msgstr "Kann 'LC_MESSAGES' Verzeichnis für Sprachdatei nicht erstellen."
 
 msgid "Unable to delete i-MSCP info file."
 msgstr "Fehler beim Löschen der i-MSCP Info Datei"
+
+#, php-format
+msgid "Unable to disable the %s plugin: %s"
+msgstr ""
+
+#, php-format
+msgid "Unable to enable the %s plugin: %s"
+msgstr ""
 
 msgid "Unable to extract info.php file"
 msgstr "Fehler beim extrahieren der info.php Datei"
@@ -5135,6 +5143,10 @@ msgstr "Die Liste der IP-Adressen kann nicht abgerufen werden. Bitte beheben Sie
 msgid "Unable to get update info from Github"
 msgstr "Es konnten keine Information von GitHub geladen werden"
 
+#, php-format
+msgid "Unable to install the %s plugin: %s"
+msgstr "Das %s plugin konnte nicht installiert werden: %s"
+
 msgid "Unable to load i-MSCP info file."
 msgstr "Fehler beim laden der i-MSCP Info Datei"
 
@@ -5143,6 +5155,10 @@ msgstr "Datei konnte nicht verschoben werden."
 
 msgid "Unable to open plugin archive."
 msgstr "Konnte das Plugin-Archiv nicht öffnen."
+
+#, php-format
+msgid "Unable to protect the %s plugin: %s"
+msgstr "Das %s plugin konnte nicht geschützt werden: %s"
 
 msgid "Unable to read Web software repository index file."
 msgstr "Lesen der Web Software Repository Index Datei ist nicht möglich."
@@ -5189,6 +5205,14 @@ msgstr "Die sslallowselfsigned-Option konnte nicht gesetzt werden"
 
 msgid "Unable to set sslverifypeer option"
 msgstr "Die sslverifypeer-Option konnte nicht gesetzt werden"
+
+#, php-format
+msgid "Unable to uninstall the %s plugin: %s"
+msgstr "Das %s plugin konnte nicht deinstalliert werden: %s"
+
+#, php-format
+msgid "Unable to update the %s plugin: %s"
+msgstr "Das %s plugin konnte nicht aktualisiert werden: %s"
 
 #, php-format
 msgid "Unable to upload file. Max. upload filesize (%1$d MB) reached?"
@@ -5972,7 +5996,7 @@ msgid "domain aliases"
 msgstr "Domain Aliase"
 
 msgid "domain data"
-msgstr ""
+msgstr "Domain Daten"
 
 msgid "domains"
 msgstr "Domains"
@@ -6062,7 +6086,7 @@ msgid "mail"
 msgstr "E-Mail"
 
 msgid "mail accounts"
-msgstr ""
+msgstr "Mail Konten"
 
 msgid "missing alias"
 msgstr "Fehlender Alias"

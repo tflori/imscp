@@ -180,14 +180,14 @@ function uploadPlugin($pluginManager)
 }
 
 /**
- * Translate plugin status
+ * Translate the given plugin status
  *
- * @param string $rawPluginStatus Raw plugin status
+ * @param string $pluginStatus Plugin status to translate
  * @return string Translated plugin status
  */
-function translateStatus($rawPluginStatus)
+function translateStatus($pluginStatus)
 {
-	switch($rawPluginStatus) {
+	switch($pluginStatus) {
 		case 'uninstalled':
 			return tr('Uninstalled');
 		case 'toinstall':
@@ -440,7 +440,30 @@ function doAction($pluginManager, $pluginName, $action)
 						$msg = ($ret == PluginManager::ACTION_FAILURE)
 							? tr('Action has failed.', true) : tr('Action has been stopped.', true);
 
-						set_page_message(tr('Unable to %s the %s plugin: %s', $action, $pluginName, $msg), 'error');
+						switch ($action) {
+							case 'install':
+								$msg = tr('Unable to install the %s plugin: %s', $pluginName, $msg);
+								break;
+							case 'uninstall':
+								$msg = tr('Unable to uninstall the %s plugin: %s', $pluginName, $msg);
+								break;
+							case 'update':
+								$msg = tr('Unable to update the %s plugin: %s', $pluginName, $msg);
+								break;
+							case 'change':
+								$msg = tr('Unable to change the %s plugin: %s', $pluginName, $msg);
+								break;
+							case 'enable':
+								$msg = tr('Unable to enable the %s plugin: %s', $pluginName, $msg);
+								break;
+							case 'disable':
+								$msg = tr('Unable to disable the %s plugin: %s', $pluginName, $msg);
+								break;
+							default:
+								$msg = tr('Unable to protect the %s plugin: %s', $pluginName, $msg);
+						}
+
+						set_page_message($msg, 'error');
 					} else {
 						$msg = '';
 

@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-05-16 17:03+0200\n"
-"PO-Revision-Date: 2015-05-16 15:06+0000\n"
+"POT-Creation-Date: 2015-05-22 01:01+0200\n"
+"PO-Revision-Date: 2015-05-21 23:04+0000\n"
 "Last-Translator: Laurent Declercq <l.declercq@nuxwin.com>\n"
 "Language-Team: Danish (Denmark) (http://www.transifex.com/projects/p/i-MSCP/language/da_DK/)\n"
 "MIME-Version: 1.0\n"
@@ -3787,14 +3787,14 @@ msgid ""
 msgstr ""
 
 #, php-format
-msgid ""
-"Plugin Manager: Unable to delete the %s plugin. Plugin has been locked by "
-"another plugin."
-msgstr "Plugin Manager: Kunne ikke slette %s plugin. ."
-
-#, php-format
 msgid "Plugin Manager: Unable to load plugin %s"
 msgstr "Plugin Manager: Er ikke i stand til at indlæse plugin %s"
+
+#, php-format
+msgid ""
+"Plugin Manager: Unable to uninsntall the %s plugin. Plugin has been locked "
+"by another plugin."
+msgstr ""
 
 #, php-format
 msgid "Plugin Manager: Unable to update the %s plugin: %s"
@@ -5057,12 +5057,12 @@ msgid "URL to this admin panel"
 msgstr "URL til dette admin panel"
 
 #, php-format
-msgid "Unable to %s the %s plugin: %s"
-msgstr ""
-
-#, php-format
 msgid "Unable to backup %s plugin directory."
 msgstr "Kan ikke sikkerhedskopiere %s plugin mappe."
+
+#, php-format
+msgid "Unable to change the %s plugin: %s"
+msgstr "Kan ikke ændre %s plugin: %s"
 
 #, php-format
 msgid "Unable to close the ticket with Id '%s'."
@@ -5080,6 +5080,14 @@ msgid "Unable to create 'LC_MESSAGES' directory for language file."
 msgstr "Kan ikke skabe 'LC_MESSAGES' mappe for sprog-fil."
 
 msgid "Unable to delete i-MSCP info file."
+msgstr ""
+
+#, php-format
+msgid "Unable to disable the %s plugin: %s"
+msgstr ""
+
+#, php-format
+msgid "Unable to enable the %s plugin: %s"
 msgstr ""
 
 msgid "Unable to extract info.php file"
@@ -5108,6 +5116,10 @@ msgstr "Kan ikke hente IP adresse listen. Venligst løs dette problem."
 msgid "Unable to get update info from Github"
 msgstr "Kunne ikke få update info fra Github"
 
+#, php-format
+msgid "Unable to install the %s plugin: %s"
+msgstr "Kan ikke installere %s plugin: %s"
+
 msgid "Unable to load i-MSCP info file."
 msgstr ""
 
@@ -5116,6 +5128,10 @@ msgstr "Kan ikke flytte fil."
 
 msgid "Unable to open plugin archive."
 msgstr "Kan ikke åbne plugin arkivet."
+
+#, php-format
+msgid "Unable to protect the %s plugin: %s"
+msgstr "Ikke i stand til at beskytte %s plugin: %s"
 
 msgid "Unable to read Web software repository index file."
 msgstr "Kan ikke læse web softwarearkiv index-fil."
@@ -5162,6 +5178,14 @@ msgstr "Kunne ikke indstille sslallowselfsigned option"
 
 msgid "Unable to set sslverifypeer option"
 msgstr "Kan ikke indstille sslverifypeer option"
+
+#, php-format
+msgid "Unable to uninstall the %s plugin: %s"
+msgstr "Kunne ikke afinstallere %s plugin: %s"
+
+#, php-format
+msgid "Unable to update the %s plugin: %s"
+msgstr "Kan ikke opdatere %s plugin: %s"
 
 #, php-format
 msgid "Unable to upload file. Max. upload filesize (%1$d MB) reached?"
@@ -6035,7 +6059,7 @@ msgid "mail"
 msgstr "mail"
 
 msgid "mail accounts"
-msgstr ""
+msgstr "mail konti"
 
 msgid "missing alias"
 msgstr "manglende alias"

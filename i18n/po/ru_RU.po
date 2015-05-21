@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-05-16 17:03+0200\n"
-"PO-Revision-Date: 2015-05-16 15:06+0000\n"
+"POT-Creation-Date: 2015-05-22 01:01+0200\n"
+"PO-Revision-Date: 2015-05-21 23:04+0000\n"
 "Last-Translator: Laurent Declercq <l.declercq@nuxwin.com>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/i-MSCP/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -91,7 +91,7 @@ msgid ""
 "Statistics: http://{USERNAME}/stats/ (Same username and password than above)\n"
 "\n"
 "Thank you for using our services.\n"
-msgstr ""
+msgstr "\n\nУважаемый {NAME},\n\nНовая учетная запись i-MSCP была создана для Вас.\n\nИнформация по учетной записи:\n\nТип пользователя: {USERTYPE}\nИмя пользователя: {USERNAME}\nПароль: {PASSWORD}\n\nНе забудьте сменить Ваш пароль после первого входа в учетную запись.\n\nВы можете войти по адресу {BASE_SERVER_VHOST_PREFIX}{BASE_SERVER_VHOST}:{BASE_SERVER_VHOST_PORT}\n\nСтатистика: http://{USERNAME}/stats/ (С теми же учетными данными)\n\nСпасибо за использование наших сервисов.\n\n___________________________\nКоманда i-MSCP\n"
 
 msgid ""
 "\n"
@@ -2261,7 +2261,7 @@ msgstr "Включено"
 
 #, php-format
 msgid "Enabled for: %s"
-msgstr ""
+msgstr "Включено для: %s"
 
 msgid ""
 "Entries associated to your external mail servers were not found. A "
@@ -3788,14 +3788,14 @@ msgid ""
 msgstr "Менеджер плагинов: Невозможно удалить файлы плагина %s. Вы должны запустить скрипт set-gui-permissions.pl и попробовать снова."
 
 #, php-format
-msgid ""
-"Plugin Manager: Unable to delete the %s plugin. Plugin has been locked by "
-"another plugin."
-msgstr "Менеджер плагинов: Невозможно удалить файлы плагина %s. Плагин заблокирован другим плагином."
-
-#, php-format
 msgid "Plugin Manager: Unable to load plugin %s"
 msgstr "Менеджер плагинов: Невозможно загрузить плагин %s"
+
+#, php-format
+msgid ""
+"Plugin Manager: Unable to uninsntall the %s plugin. Plugin has been locked "
+"by another plugin."
+msgstr ""
 
 #, php-format
 msgid "Plugin Manager: Unable to update the %s plugin: %s"
@@ -5058,12 +5058,12 @@ msgid "URL to this admin panel"
 msgstr "Ссылка на панель управления"
 
 #, php-format
-msgid "Unable to %s the %s plugin: %s"
-msgstr "Невозможно %s плагин %s: %s"
-
-#, php-format
 msgid "Unable to backup %s plugin directory."
 msgstr "Невозможно сделать резервную копию плагина %s ."
+
+#, php-format
+msgid "Unable to change the %s plugin: %s"
+msgstr "Менеджер плагинов: Невозможно изменить плагин %s: %s"
 
 #, php-format
 msgid "Unable to close the ticket with Id '%s'."
@@ -5082,6 +5082,14 @@ msgstr "Невозможно создать каталог 'LC_MESSAGES' для 
 
 msgid "Unable to delete i-MSCP info file."
 msgstr "Невозможно удалить файл информации i-MSCP."
+
+#, php-format
+msgid "Unable to disable the %s plugin: %s"
+msgstr ""
+
+#, php-format
+msgid "Unable to enable the %s plugin: %s"
+msgstr ""
 
 msgid "Unable to extract info.php file"
 msgstr "Невозможно извлечь файл info.php"
@@ -5109,6 +5117,10 @@ msgstr "Невозможно создать список IP адресов. По
 msgid "Unable to get update info from Github"
 msgstr "Невозможно получить информацию об обновлении из Github"
 
+#, php-format
+msgid "Unable to install the %s plugin: %s"
+msgstr "Менеджер плагинов: Невозможно установить плагин %s: %s"
+
 msgid "Unable to load i-MSCP info file."
 msgstr "Невозможно загрузить файл информации i-MSCP."
 
@@ -5117,6 +5129,10 @@ msgstr "Не удалось переместить файл."
 
 msgid "Unable to open plugin archive."
 msgstr "Невозможно открыть архив плагина."
+
+#, php-format
+msgid "Unable to protect the %s plugin: %s"
+msgstr "Менеджер плагинов: Невозможно защитить плагин %s: %s"
 
 msgid "Unable to read Web software repository index file."
 msgstr "Невозможно прочесть индексный файл Web-репозитория"
@@ -5163,6 +5179,14 @@ msgstr "Невозможно включить опцию sslallowselfsigned"
 
 msgid "Unable to set sslverifypeer option"
 msgstr "Невозможно включить опцию sslverifypeer"
+
+#, php-format
+msgid "Unable to uninstall the %s plugin: %s"
+msgstr "Менеджер плагинов: Невозможно деинсталлировать плагин %s: %s"
+
+#, php-format
+msgid "Unable to update the %s plugin: %s"
+msgstr "Менеджер плагинов: Невозможно обновить плагин %s: %s"
 
 #, php-format
 msgid "Unable to upload file. Max. upload filesize (%1$d MB) reached?"
@@ -5946,7 +5970,7 @@ msgid "domain aliases"
 msgstr "алиасы домена"
 
 msgid "domain data"
-msgstr ""
+msgstr "данные домена"
 
 msgid "domains"
 msgstr "домены"
@@ -6036,7 +6060,7 @@ msgid "mail"
 msgstr "почта"
 
 msgid "mail accounts"
-msgstr ""
+msgstr "почтовых ящиков"
 
 msgid "missing alias"
 msgstr "отсутствующий алиас"

@@ -46,7 +46,7 @@ class iMSCP_Update_Database extends iMSCP_Update
 	/**
 	 * @var int Last database update revision
 	 */
-	protected $lastUpdate = 204;
+	protected $lastUpdate = 206;
 
 	/**
 	 * Singleton - Make new unavailable
@@ -3104,16 +3104,6 @@ class iMSCP_Update_Database extends iMSCP_Update
 	}
 
 	/**
-	 * Add plugin.plugin_lock field
-	 *
-	 * @return string SQL statement to be executed
-	 */
-	protected function r197()
-	{
-		return $this->addColumn('plugin', 'plugin_locked', "TINYINT UNSIGNED NOT NULL DEFAULT '0'");
-	}
-
-	/**
 	 * Remove postgrey and policyd-weight ports
 	 *
 	 * @return void
@@ -3250,5 +3240,15 @@ class iMSCP_Update_Database extends iMSCP_Update
 		}
 
 		return $sqlUpd;
+	}
+
+	/**
+	 * Add plugin.plugin_lock field
+	 *
+	 * @return string SQL statement to be executed
+	 */
+	protected function r206()
+	{
+		return $this->addColumn('plugin', 'plugin_locked', "TINYINT UNSIGNED NOT NULL DEFAULT '0'");
 	}
 }
