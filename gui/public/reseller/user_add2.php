@@ -100,7 +100,7 @@ function get_init_au2_page($tpl, $phpini)
 	if(resellerHasFeature('backup')) {
 		$tplVars['VL_BACKUPD'] = in_array('_dmn_', $backup) ? $htmlChecked : '';
 		$tplVars['VL_BACKUPS'] = in_array('_sql_', $backup) ? $htmlChecked : '';
-		$tplVars['VL_BACKUPS'] = in_array('_mail_', $backup) ? $htmlChecked : '';
+		$tplVars['VL_BACKUPM'] = in_array('_mail_', $backup) ? $htmlChecked : '';
 	}
 
 	$tplVars['VL_WEB_FOLDER_PROTECTION_YES'] = ($webFolderProtection == '_yes_') ? $htmlChecked : '';
@@ -114,13 +114,13 @@ function get_init_au2_page($tpl, $phpini)
 		$tplVars['TR_SETTINGS'] = tr('Settings');
 		$tplVars['TR_DIRECTIVES_VALUES'] = tr('Directive values');
 		$tplVars['TR_FIELDS_OK'] = tr('All fields seem to be valid.');
-		$tplVars['TR_VALUE_ERROR'] = tr('Value for the PHP <strong>%%s</strong> directive must be between %%d and %%d.', true);
+		$tplVars['TR_VALUE_ERROR'] = tr('Value for the PHP <strong>%%s</strong> directive must be between %%d and %%d.');
 		$tplVars['TR_CLOSE'] = tr('Close');
-		$tplVars['TR_PHP_POST_MAX_SIZE_DIRECTIVE'] = tr('PHP %s directive', true, '<b>post_max_size</b>');
-		$tplVars['PHP_UPLOAD_MAX_FILEZISE_DIRECTIVE'] = tr('PHP %s directive', true, '<b>upload_max_filezize</b>');
-		$tplVars['TR_PHP_MAX_EXECUTION_TIME_DIRECTIVE'] = tr('PHP %s directive', true, '<b>max_execution_time</b>');
-		$tplVars['TR_PHP_MAX_INPUT_TIME_DIRECTIVE'] = tr('PHP %s directive', true, '<b>max_input_time</b>');
-		$tplVars['TR_PHP_MEMORY_LIMIT_DIRECTIVE'] = tr('PHP %s directive', true, '<b>memory_limit</b>');
+		$tplVars['TR_PHP_POST_MAX_SIZE_DIRECTIVE'] = tr('PHP %s directive', '<b>post_max_size</b>');
+		$tplVars['PHP_UPLOAD_MAX_FILEZISE_DIRECTIVE'] = tr('PHP %s directive', '<b>upload_max_filezize</b>');
+		$tplVars['TR_PHP_MAX_EXECUTION_TIME_DIRECTIVE'] = tr('PHP %s directive', '<b>max_execution_time</b>');
+		$tplVars['TR_PHP_MAX_INPUT_TIME_DIRECTIVE'] = tr('PHP %s directive', '<b>max_input_time</b>');
+		$tplVars['TR_PHP_MEMORY_LIMIT_DIRECTIVE'] = tr('PHP %s directive', '<b>memory_limit</b>');
 		$tplVars['TR_MIB'] = tr('MiB');
 		$tplVars['TR_SEC'] = tr('Sec.');
 
@@ -129,7 +129,7 @@ function get_init_au2_page($tpl, $phpini)
 		if (!$phpini->checkRePerm('phpiniAllowUrlFopen')) {
 			$tplVars['PHP_EDITOR_ALLOW_URL_FOPEN_BLOCK'] = '';
 		} else {
-			$tplVars['TR_CAN_EDIT_ALLOW_URL_FOPEN'] = tr('Can edit the PHP %s directive', true, '<b>allow_url_fopen</b>');
+			$tplVars['TR_CAN_EDIT_ALLOW_URL_FOPEN'] = tr('Can edit the PHP %s directive', '<b>allow_url_fopen</b>');
 			$tplVars['ALLOW_URL_FOPEN_YES'] = ($phpini->getClPermVal('phpiniAllowUrlFopen') == 'yes') ? $htmlChecked : '';
 			$tplVars['ALLOW_URL_FOPEN_NO'] = ($phpini->getClPermVal('phpiniAllowUrlFopen') == 'no') ? $htmlChecked : '';
 			$permissionsBlock = true;
@@ -138,7 +138,7 @@ function get_init_au2_page($tpl, $phpini)
 		if (!$phpini->checkRePerm('phpiniDisplayErrors')) {
 			$tplVars['PHP_EDITOR_DISPLAY_ERRORS_BLOCK'] = '';
 		} else {
-			$tplVars['TR_CAN_EDIT_DISPLAY_ERRORS'] = tr('Can edit the PHP %s directive', true, '<b>display_errors</b>');
+			$tplVars['TR_CAN_EDIT_DISPLAY_ERRORS'] = tr('Can edit the PHP %s directive', '<b>display_errors</b>');
 			$tplVars['DISPLAY_ERRORS_YES'] = ($phpini->getClPermVal('phpiniDisplayErrors') == 'yes') ? $htmlChecked : '';
 			$tplVars['DISPLAY_ERRORS_NO'] = ($phpini->getClPermVal('phpiniDisplayErrors') == 'no') ? $htmlChecked : '';
 			$permissionsBlock = true;
@@ -147,7 +147,7 @@ function get_init_au2_page($tpl, $phpini)
 		if ($cfg['HTTPD_SERVER'] == 'apache_itk' || !$phpini->checkRePerm('phpiniDisableFunctions')) {
 			$tplVars['PHP_EDITOR_DISABLE_FUNCTIONS_BLOCK'] = '';
 		} else {
-			$tplVars['TR_CAN_EDIT_DISABLE_FUNCTIONS'] = tr('Can edit the PHP %s directive', true, '<b>disable_functions</b>');
+			$tplVars['TR_CAN_EDIT_DISABLE_FUNCTIONS'] = tr('Can edit the PHP %s directive', '<b>disable_functions</b>');
 			$tplVars['DISABLE_FUNCTIONS_YES'] = ($phpini->getClPermVal('phpiniDisableFunctions') == 'yes') ? $htmlChecked : '';
 			$tplVars['DISABLE_FUNCTIONS_NO'] = ($phpini->getClPermVal('phpiniDisableFunctions') == 'no') ? $htmlChecked : '';
 			$tplVars['TR_ONLY_EXEC'] = tr('Only exec');
@@ -454,7 +454,7 @@ function check_user_data($phpini)
 
 	if (resellerHasFeature('backup')) {
 		$backup = isset($_POST['backup']) && is_array($_POST['backup'])
-			? array_intersect($_POST['backup'], array('dmn', 'sql', 'mail')) : array();
+			? array_intersect($_POST['backup'], array('_dmn_', '_sql_', '_mail_')) : array();
 	} else {
 		$backup = array();
 	}
