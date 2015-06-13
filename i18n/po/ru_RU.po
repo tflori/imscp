@@ -5,6 +5,7 @@
 # Translators:
 # 9 Beliy <9beliy@gmail.com>, 2012
 # hosterdev <rwer353453534@mail.ru>, 2011
+# i-MSCP <team@i-mscp.net>, 2015
 # Laurent Declercq <l.declercq@nuxwin.com>, 2015
 # Oleg Olegov <>, 2012
 # Vitaliy Zhukov <DragonZX@yandex.ru>, 2014-2015
@@ -12,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-08 13:04+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/i-MSCP/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -622,7 +623,7 @@ msgid "Add custom menu"
 msgstr "Добавить пользовательское меню"
 
 msgid "Add customer"
-msgstr "Добавить клиента"
+msgstr "Добавить пользователя"
 
 msgid "Add customer - Next step"
 msgstr "Добавить клиента - Следующий шаг"
@@ -763,12 +764,12 @@ msgid "Admin / Statistics / Reseller Statistics"
 msgstr "Администратор / Статистика / Статистика реселлеров"
 
 msgid "Admin / Statistics / Reseller Statistics / User Statistics"
-msgstr ""
+msgstr "Админ / Статистика / Статистика реселлера / Статистика пользователя"
 
 msgid ""
 "Admin / Statistics / Reseller Statistics / User Statistics / {USERNAME} user"
 " statistics"
-msgstr ""
+msgstr "Админ / Статистика / Статистика реселлера / Статистика пользователя / Статистика пользователя  {USERNAME} "
 
 msgid "Admin / Statistics / Server Statistics"
 msgstr "Администратор / Статистика / Статистика сервера"
@@ -1643,7 +1644,7 @@ msgid "Customer account summary"
 msgstr "Учетная запись клиента"
 
 msgid "Customer assignments"
-msgstr ""
+msgstr "Назначения клиентов"
 
 msgid "Customer consumption"
 msgstr "Потребление клиента"
@@ -2151,7 +2152,7 @@ msgid "Edit reseller"
 msgstr "Редактировать реселлера"
 
 msgid "Edit subdomain"
-msgstr "Редактировать поддомен"
+msgstr "Изменить поддомен"
 
 msgid "Edit user"
 msgstr "Редактировать пользователя"
@@ -2623,7 +2624,7 @@ msgid "IP addresses under control of i-MSCP"
 msgstr "IP адреса под контролем i-MSCP."
 
 msgid "IP assignments"
-msgstr ""
+msgstr "Назначение IP"
 
 msgid "IP management"
 msgstr "Управление IP"
@@ -2656,7 +2657,7 @@ msgid "Import in local repository"
 msgstr "Импортировать"
 
 msgid "Import new language file"
-msgstr ""
+msgstr "Bvgjhnbhjdfnm yjdsq zpsrjdjq afqk"
 
 msgid ""
 "In case domain expiration date is 'N/A', the expiration date will be set "
@@ -3454,7 +3455,7 @@ msgid "PHP settings"
 msgstr "Настройки PHP"
 
 msgid "POP3/IMAP"
-msgstr ""
+msgstr "POP3/IMAP"
 
 msgid "POP3/IMAP in"
 msgstr "POP3/IMAP вх"
@@ -4081,7 +4082,7 @@ msgid "Reseller / Statistics / Overview"
 msgstr "Реселлер / Статистика / Обзор"
 
 msgid "Reseller / Statistics / Overview / {USERNAME} USER Statistics"
-msgstr ""
+msgstr "Реселлер / Статистика / Общее / Статистика пользователя {USERNAME}"
 
 msgid "Reseller / Support / Closed Tickets"
 msgstr "Реселлер / Служба поддержки / Закрытые тикеты"
@@ -4117,7 +4118,7 @@ msgid "Reseller assignment"
 msgstr "Назначение реселлера"
 
 msgid "Reseller assignments"
-msgstr ""
+msgstr "Назначение реселлера"
 
 msgid "Reseller consumption"
 msgstr "Затраты Реселлера"
@@ -4141,7 +4142,7 @@ msgid "Reseller software list"
 msgstr "Список ПО реселлеров."
 
 msgid "Reseller statistics"
-msgstr "Статистика реселлеров"
+msgstr "Статистика реселлера"
 
 msgid "Reseller successfully added."
 msgstr "Реселлер успешно добавлен."
@@ -4405,7 +4406,7 @@ msgid "Services status"
 msgstr "Статус служб"
 
 msgid "Sessions"
-msgstr "Сессии"
+msgstr "Сессия"
 
 msgid "Set status to 'tochange'"
 msgstr "Сменить статус на \"к изменению\""
@@ -4445,7 +4446,7 @@ msgid "Show detailed statistics for this reseller"
 msgstr "Показать детальную статистику для этого реселлера"
 
 msgid "Show detailed statistics for this user"
-msgstr ""
+msgstr "Показать детальную статистику для этого реселлера"
 
 msgid "Show in"
 msgstr "Показать в"
@@ -4518,7 +4519,7 @@ msgid "Software not found!"
 msgstr "Пакет не найден!"
 
 msgid "Software options"
-msgstr "Настройки ПО"
+msgstr "Управление ПО"
 
 msgid "Software permissions"
 msgstr "Разрешения программного обеспечения"
@@ -5023,7 +5024,7 @@ msgid "Traffic"
 msgstr "Трафик"
 
 msgid "Traffic statistics"
-msgstr ""
+msgstr "Статистика трафика"
 
 msgid "Traffic usage"
 msgstr "Использование трафика"
@@ -5380,7 +5381,7 @@ msgid "User session successfully killed for password change."
 msgstr "Сессия пользователя успешно завершена для смены пароля."
 
 msgid "User statistics"
-msgstr ""
+msgstr "Статистика пользователя"
 
 msgid "User successfully disconnected."
 msgstr "Пользователь успешно отсоединен."
@@ -5448,7 +5449,7 @@ msgid "View hosting plan"
 msgstr "Смотреть хостинг-план"
 
 msgid "View ticket"
-msgstr "Просмотреть запрос"
+msgstr "Просмотр тикета"
 
 msgid "Visit plugin site"
 msgstr "Посетить сайт плагина"
@@ -6149,7 +6150,7 @@ msgid "{RESELLER} uploaded a new software package"
 msgstr "{RESELLER} загрузил новый пакет ПО"
 
 msgid "{USERNAME} user statistics"
-msgstr ""
+msgstr "Статистика пользователя {USERNAME} "
 
 msgid "© 2010-2015 i-MSCP Team<br/>All Rights Reserved"
 msgstr "© 2010-2015 i-MSCP Team<br/>Все права защищены"

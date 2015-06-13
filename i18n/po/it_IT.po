@@ -4,6 +4,7 @@
 # 
 # Translators:
 # DrPan <giuseppe.pannullo@gmail.com>, 2013
+# i-MSCP <team@i-mscp.net>, 2015
 # Stefano, 2011,2013-2014
 # Stefano, 2015
 # theprincy <powerpcweb@gmail.com>, 2014
@@ -13,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-08 13:34+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/i-MSCP/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -1737,7 +1738,7 @@ msgid "Database with comma(s) in name is not accepted."
 msgstr ""
 
 msgid "Databases"
-msgstr "Database"
+msgstr "SQL Databases"
 
 msgid "Date"
 msgstr "Data"
@@ -2401,7 +2402,7 @@ msgid "FileManager"
 msgstr "FileManager"
 
 msgid "Filemanager"
-msgstr "FileManager"
+msgstr ""
 
 msgid "Filesystem system Info"
 msgstr "Informazioni filesystem"
@@ -2627,7 +2628,7 @@ msgid "IP assignments"
 msgstr ""
 
 msgid "IP management"
-msgstr "Gestione indirizzo IP"
+msgstr ""
 
 msgid "IP usage"
 msgstr "IP utilizzato"
@@ -3452,7 +3453,7 @@ msgid "PHP exec() function"
 msgstr "Funzione PHP eseguibile ()"
 
 msgid "PHP settings"
-msgstr "Impostazioni PHP"
+msgstr ""
 
 msgid "POP3/IMAP"
 msgstr ""
@@ -6153,4 +6154,4 @@ msgid "{USERNAME} user statistics"
 msgstr ""
 
 msgid "© 2010-2015 i-MSCP Team<br/>All Rights Reserved"
-msgstr ""
+msgstr "© 2010-2015 i-MSCP Team<br/>Tutti i diritti riservati"

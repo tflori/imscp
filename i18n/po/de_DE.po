@@ -12,6 +12,7 @@
 # design <schlanki_26@web.de>, 2011
 # FlorianJ <flo_jung@web.de>, 2012
 # Florian Jung <>, 2012
+# i-MSCP <team@i-mscp.net>, 2015
 # Christoph Keßler, 2015
 # kreilinger <strauss3@gmx.at>, 2011
 # Laurent Declercq <l.declercq@nuxwin.com>, 2014-2015
@@ -23,7 +24,7 @@
 # neppumuck <neppumuck@web.de>, 2012
 # Pascal Küppers <>, 2012
 # Pascal Senn <pascal@pascalsenn.info>, 2015
-# Patrick <speddy20537@gmx.de>, 2014
+# Patrick <speddy20537@gmx.de>, 2014-2015
 # Patrik Kernstock <patschimail@gmail.com>, 2015
 # Peter Wyss <peter@obanax.ch>, 2013
 # radiostreame <jojoeva84@outlook.de>, 2014
@@ -38,8 +39,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-08 12:56+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/i-MSCP/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -615,13 +616,13 @@ msgid "Add / Edit SSL certificate"
 msgstr "SSL-Zertifikat hinzufügen / bearbeiten"
 
 msgid "Add FTP account"
-msgstr "FTP Account hinzufügen"
+msgstr "FTP Account anlegen"
 
 msgid "Add Htaccess group"
-msgstr "htaccess-Gruppe hinzufügen"
+msgstr "Htaccess-Gruppe hinzufügen"
 
 msgid "Add Htaccess user"
-msgstr "Htaccess-Benutzer hinzufügen"
+msgstr "Htaccess-Benutzer anlegen"
 
 msgid "Add SQL database"
 msgstr "SQL-Datenbank anlegen"
@@ -639,28 +640,28 @@ msgid "Add admin"
 msgstr "Administrator erstellen"
 
 msgid "Add catchall"
-msgstr "Catch-All hinzufügen"
+msgstr "Catch-All anlegen"
 
 msgid "Add custom DNS record"
-msgstr "Eigene DNS-Einträge hinzufügen"
+msgstr "Eigene DNS-Einträge anlegen"
 
 msgid "Add custom menu"
 msgstr "Eigenes Menü hinzufügen"
 
 msgid "Add customer"
-msgstr "Kunde hinzufügen"
+msgstr "Kunde anlegen"
 
 msgid "Add customer - Next step"
-msgstr "Kunde hinzufügen - Nächster Schritt"
+msgstr "Kundeanlegen - Nächster Schritt"
 
 msgid "Add domain alias"
 msgstr "Domain-Alias hinzufügen"
 
 msgid "Add email account"
-msgstr "E-Mail-Konto hinzufügen"
+msgstr "E-Mail-Konto anlegen"
 
 msgid "Add external mail server for {DOMAIN_UTF8}"
-msgstr "Externen Mailserver für {DOMAIN_UTF8} hinzufügen"
+msgstr "Externen Mailserver für {DOMAIN_UTF8} anlegen"
 
 msgid "Add group"
 msgstr "Gruppe anlegen"
@@ -789,12 +790,12 @@ msgid "Admin / Statistics / Reseller Statistics"
 msgstr "Admin / Statistiken / Reseller Statistiken"
 
 msgid "Admin / Statistics / Reseller Statistics / User Statistics"
-msgstr ""
+msgstr "Admin / Statistiken / Reseller Statistiken / Kunden Statistiken"
 
 msgid ""
 "Admin / Statistics / Reseller Statistics / User Statistics / {USERNAME} user"
 " statistics"
-msgstr ""
+msgstr "Admin / Statistiken / Reseller Statistiken / Kunden Statistiken / Domain Statistiken"
 
 msgid "Admin / Statistics / Server Statistics"
 msgstr "Admin / Statistiken / Server Statistiken"
@@ -1669,7 +1670,7 @@ msgid "Customer account summary"
 msgstr "Kundenaccount Zusammenfassung"
 
 msgid "Customer assignments"
-msgstr ""
+msgstr "Kundenzuordnung"
 
 msgid "Customer consumption"
 msgstr "Kundenverbrauchsdaten"
@@ -2649,7 +2650,7 @@ msgid "IP addresses under control of i-MSCP"
 msgstr "IP-Adresse unter der Kontrolle von i-MSCP."
 
 msgid "IP assignments"
-msgstr ""
+msgstr "IP Zuweisungen"
 
 msgid "IP management"
 msgstr "IP Verwaltung"
@@ -2682,7 +2683,7 @@ msgid "Import in local repository"
 msgstr "Importieren in lokales Repository"
 
 msgid "Import new language file"
-msgstr ""
+msgstr "Importieren Sie neue Sprachdatei"
 
 msgid ""
 "In case domain expiration date is 'N/A', the expiration date will be set "
@@ -3477,10 +3478,10 @@ msgid "PHP exec() function"
 msgstr "PHP exec()-Funktion"
 
 msgid "PHP settings"
-msgstr "PHP-Einstellungen"
+msgstr "PHP Einstellungen"
 
 msgid "POP3/IMAP"
-msgstr ""
+msgstr "POP3/IMAP-Traffic"
 
 msgid "POP3/IMAP in"
 msgstr "POP3/IMAP (in)"
@@ -4107,7 +4108,7 @@ msgid "Reseller / Statistics / Overview"
 msgstr "Reseller / Statistiken / Übersicht"
 
 msgid "Reseller / Statistics / Overview / {USERNAME} USER Statistics"
-msgstr ""
+msgstr "Reseller / Statistiken / Übersicht / Domain Statistiken - {DOMAIN_NAME}"
 
 msgid "Reseller / Support / Closed Tickets"
 msgstr "Reseller / Support / Geschlossene Tickets"
@@ -4143,7 +4144,7 @@ msgid "Reseller assignment"
 msgstr "Reseller Zuordnung"
 
 msgid "Reseller assignments"
-msgstr ""
+msgstr "Reseller Zuordnung"
 
 msgid "Reseller consumption"
 msgstr "Reseller Verbrauch"
@@ -4471,7 +4472,7 @@ msgid "Show detailed statistics for this reseller"
 msgstr "Zeige detaillierte Statistiken für diesen Reseller"
 
 msgid "Show detailed statistics for this user"
-msgstr ""
+msgstr "Detaillierte Statistiken für diesen Benutzer anzeigen"
 
 msgid "Show in"
 msgstr "Anzeigen in"
@@ -5049,7 +5050,7 @@ msgid "Traffic"
 msgstr "Transfervolumen (Traffic)"
 
 msgid "Traffic statistics"
-msgstr ""
+msgstr "Transfervolumen"
 
 msgid "Traffic usage"
 msgstr "Transfervolumen (Traffic)"
@@ -5406,7 +5407,7 @@ msgid "User session successfully killed for password change."
 msgstr "Benutzersitzung wurde erfolgreich für Passwort-Änderung gelöscht."
 
 msgid "User statistics"
-msgstr ""
+msgstr "Kundenstatistiken"
 
 msgid "User successfully disconnected."
 msgstr "Benutzer erfolgreich getrennt."
@@ -6175,7 +6176,7 @@ msgid "{RESELLER} uploaded a new software package"
 msgstr "{RESELLER} hat ein neues Software-Paket hochgeladen"
 
 msgid "{USERNAME} user statistics"
-msgstr ""
+msgstr "{Username} User-Statistik"
 
 msgid "© 2010-2015 i-MSCP Team<br/>All Rights Reserved"
 msgstr "© 2010-2015 i-MSCP Team<br/>Alle Rechte vorbehalten"

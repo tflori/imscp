@@ -118,7 +118,7 @@ sub postinstall
 	iMSCP::Service->getInstance()->enable($self->{'config'}->{'FTPD_SNAME'});
 
 	$self->{'eventManager'}->register(
-		'beforeSetupRestartServices', sub { push @{$_[0]}, [ sub { $self->restart(); }, 'Proftpd' ]; 0; }
+		'beforeSetupRestartServices', sub { push @{$_[0]}, [ sub { $self->restart(); }, 'ProFTPD' ]; 0; }
 	);
 
 	$self->{'eventManager'}->trigger('afterFtpdPostInstall', 'proftpd');
@@ -249,7 +249,16 @@ sub restart
 	my $rs = $self->{'eventManager'}->trigger('beforeFtpdRestart');
 	return $rs if $rs;
 
-	iMSCP::Service->getInstance()->restart($self->{'config'}->{'FTPD_SNAME'});
+	my $serviceMngr = iMSCP::Service->getInstance();
+
+	# Mitigate restart problems by waiting a bit before start
+	# For instance on Ubuntu Trusty, ProftPD stay is not running state when using restart command
+	$serviceMngr->stop($self->{'config'}->{'FTPD_SNAME'});
+
+	# Give ProFTPD sufficient time for stopping
+	sleep 2;
+
+	$serviceMngr->start($self->{'config'}->{'FTPD_SNAME'});
 
 	$self->{'eventManager'}->trigger('afterFtpdRestart');
 }
@@ -266,6 +275,8 @@ sub getTraffic
 {
 	my $self = $_[0];
 
+	require File::Temp;
+
 	my $trafficDbPath = "$main::imscpConfig{'VARIABLE_DATA_DIR'}/ftp_traffic.db";
 
 	# Load traffic database
@@ -275,16 +286,14 @@ sub getTraffic
 	my $trafficDataSrc = "$main::imscpConfig{'TRAFF_LOG_DIR'}/$self->{'config'}->{'FTP_TRAFF_LOG_PATH'}";
 
 	if(-f $trafficDataSrc && -s _) {
-		my $wrkLogFile = "$main::imscpConfig{'LOG_DIR'}/" . basename($trafficDataSrc);
+		my $tpmFile = File::Temp->new();
 
-		# Creating working file from current state of data source
-		my $rs = iMSCP::File->new( filename => $trafficDataSrc)->moveFile($wrkLogFile);
+		# Create a snapshot of log file to process
+		my $rs = iMSCP::File->new( filename => $trafficDataSrc)->moveFile($tpmFile);
 		die(iMSCP::Debug::getLastError()) if $rs;
 
 		# Read and parse file (line by line)
-		open my $file, '<', $wrkLogFile or die("Unable to open $wrkLogFile: $!");
-		$trafficDb{$2} += $1 while(<$file> =~ /^(\d+)\s+[^\@]+\@(.*)$/gmo);
-		close $file;
+		$trafficDb{$2} += $1 while(<$tpmFile> =~ /^(\d+)\s+[^\@]+\@(.*)$/gmo);
 	}
 
 	# Schedule deletion of full traffic database. This is only done on success. On failure, the traffic database is kept

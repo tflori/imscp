@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Ádám Radovits <adamradovits12@hotmail.com>, 2014-2015
+# i-MSCP <team@i-mscp.net>, 2015
 # knorbi555 <k.norbi555@gmail.com>, 2012
 # Laurent Declercq <l.declercq@nuxwin.com>, 2014
 # needforszpit <needforszpit@gmail.com>, 2015
@@ -12,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-08 12:59+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: Hungarian (Hungary) (http://www.transifex.com/projects/p/i-MSCP/language/hu_HU/)\n"
 "MIME-Version: 1.0\n"
@@ -763,12 +764,12 @@ msgid "Admin / Statistics / Reseller Statistics"
 msgstr "Adminisztrátor / Statisztikák / Viszonteladó statisztikák"
 
 msgid "Admin / Statistics / Reseller Statistics / User Statistics"
-msgstr ""
+msgstr "Adminisztrátor / Statisztika / Viszonteladói statisztika / Felhasználói statisztika"
 
 msgid ""
 "Admin / Statistics / Reseller Statistics / User Statistics / {USERNAME} user"
 " statistics"
-msgstr ""
+msgstr "Adminisztrátor / Statisztika / Viszonteladói statisztika / Felhasználói statisztika / {USERNAME} felhasználó statisztikája"
 
 msgid "Admin / Statistics / Server Statistics"
 msgstr "Adminisztrátor / Statisztikák / Szerver statisztikák"
@@ -1643,7 +1644,7 @@ msgid "Customer account summary"
 msgstr "Ügyfél fiók összegzése"
 
 msgid "Customer assignments"
-msgstr ""
+msgstr "Ügyfél átadása"
 
 msgid "Customer consumption"
 msgstr "Ügyfél felhasználás"
@@ -2473,7 +2474,7 @@ msgid "Gender"
 msgstr "Nem"
 
 msgid "General"
-msgstr "Általános"
+msgstr "Általános beállítások"
 
 msgid "General information"
 msgstr "Kezdőlap"
@@ -2623,7 +2624,7 @@ msgid "IP addresses under control of i-MSCP"
 msgstr "i-MSCP által kezelt IP-címek"
 
 msgid "IP assignments"
-msgstr ""
+msgstr "IP-cím kiosztás"
 
 msgid "IP management"
 msgstr "IP-cím kezelő"
@@ -2656,7 +2657,7 @@ msgid "Import in local repository"
 msgstr "Import a helyi raktárba"
 
 msgid "Import new language file"
-msgstr ""
+msgstr "Új nyelvi fájl importálása"
 
 msgid ""
 "In case domain expiration date is 'N/A', the expiration date will be set "
@@ -2811,7 +2812,7 @@ msgid "Invalid URL."
 msgstr "Érvénytelen webcím"
 
 msgid "Invalid certificate."
-msgstr "Érvénytelen tanúsítvány"
+msgstr "Érvénytelen tanúsítvány."
 
 msgid "Invalid domain name."
 msgstr "Hibás domain név."
@@ -3454,7 +3455,7 @@ msgid "PHP settings"
 msgstr "PHP beállítások"
 
 msgid "POP3/IMAP"
-msgstr ""
+msgstr "POP3/IMAP"
 
 msgid "POP3/IMAP in"
 msgstr "POP3/IMAP(bejövő)"
@@ -3815,7 +3816,7 @@ msgid "Plugin list is empty."
 msgstr "Bővítmény lista üres."
 
 msgid "Plugin management"
-msgstr "Bővítménykezelő"
+msgstr "Bővítőmodulok kezelése"
 
 msgid "Plugins Upload"
 msgstr "Bővítmény feltöltése"
@@ -4081,7 +4082,7 @@ msgid "Reseller / Statistics / Overview"
 msgstr "Viszonteladó / Statisztika / Áttekintés"
 
 msgid "Reseller / Statistics / Overview / {USERNAME} USER Statistics"
-msgstr ""
+msgstr "Viszonteladó / Statisztika / Áttekintés / {USERNAME} FELHASZNÁLÓ statisztikája"
 
 msgid "Reseller / Support / Closed Tickets"
 msgstr "Viszonteladó / Ügyfélszolgálat / Zárt hibajegyek"
@@ -4117,7 +4118,7 @@ msgid "Reseller assignment"
 msgstr "Viszonteladó átadása"
 
 msgid "Reseller assignments"
-msgstr ""
+msgstr "Viszonteladó átadások"
 
 msgid "Reseller consumption"
 msgstr "Viszonteladó felhasználás"
@@ -4445,7 +4446,7 @@ msgid "Show detailed statistics for this reseller"
 msgstr "Viszonteladó részletes statisztikájának megjelenítése"
 
 msgid "Show detailed statistics for this user"
-msgstr ""
+msgstr "Felhasználó részletes statisztikájának megjelenítése"
 
 msgid "Show in"
 msgstr "Megjelenik"
@@ -4747,7 +4748,7 @@ msgid "Target port"
 msgstr "Port"
 
 msgid "Template for Auto email successfully updated."
-msgstr "Auto email sablon sikeresen frissítve"
+msgstr "Auto e-mail sablon sikeresen frissítve"
 
 msgid "Temporary folder not found."
 msgstr "Ideiglenes könyvtár nem található"
@@ -5023,7 +5024,7 @@ msgid "Traffic"
 msgstr "Forgalom"
 
 msgid "Traffic statistics"
-msgstr ""
+msgstr "Forgalmi statisztikák"
 
 msgid "Traffic usage"
 msgstr "Adatforgalom"
@@ -5380,7 +5381,7 @@ msgid "User session successfully killed for password change."
 msgstr "Felhasználó jelszavának megváltoztatása nem sikerült"
 
 msgid "User statistics"
-msgstr ""
+msgstr "Felhasználói statisztikák"
 
 msgid "User successfully disconnected."
 msgstr "Felhasználó sikeresen leválasztva"
@@ -5899,7 +5900,7 @@ msgstr "A távoli fájlméret (%s) kevesebb, mint 1 bájt. Kérjük, ellenőrizz
 msgid ""
 "Your request for new password has been registered. You will receive an email"
 " with instructions to complete the process."
-msgstr "Jelszó változtatási igényét regisztráltuk! Hamarosan kapni fog egy email-t a további teendőkkel kapcsolatban."
+msgstr "Jelszó változtatási igényét regisztráltuk! Hamarosan kapni fog egy e-mail-t a további teendőkkel kapcsolatban."
 
 msgid "ZB"
 msgstr "ZB"
@@ -5989,7 +5990,7 @@ msgid "i-MSCP - Application Management (Permissions)"
 msgstr "i-MSCP - Alkalmazáskezelő (jogosultságkezelés)"
 
 msgid "i-MSCP - Client/Create CatchAll Mail Account"
-msgstr "i-MSCP - Ügyfél / Gyűjtő email cím (catch-all) létrehozása"
+msgstr "i-MSCP - Ügyfél / Gyűjtő e-mail cím (catch-all) létrehozása"
 
 msgid "i-MSCP - Multi Server Control Panel / Login"
 msgstr "i-MSCP - Tárhely kezelő rendszer / Bejelentkezés"
@@ -6052,10 +6053,10 @@ msgid "kiB"
 msgstr "kB"
 
 msgid "mail"
-msgstr "email"
+msgstr "e-mail"
 
 msgid "mail accounts"
-msgstr "email fiókok"
+msgstr "e-mail fiókok"
 
 msgid "missing alias"
 msgstr "hiányzó domain álnév"
@@ -6149,7 +6150,7 @@ msgid "{RESELLER} uploaded a new software package"
 msgstr "{RESELLER} által fetöltött új program csomagok"
 
 msgid "{USERNAME} user statistics"
-msgstr ""
+msgstr "{USERNAME} felhasználó statisztikái"
 
 msgid "© 2010-2015 i-MSCP Team<br/>All Rights Reserved"
 msgstr "© 2010-2015 i-MSCP Team<br/>Minden jog fenntartva."

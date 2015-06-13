@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-08 12:44+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: Bulgarian (Bulgaria) (http://www.transifex.com/projects/p/i-MSCP/language/bg_BG/)\n"
 "MIME-Version: 1.0\n"
@@ -595,7 +595,7 @@ msgid "Add Htaccess user"
 msgstr ""
 
 msgid "Add SQL database"
-msgstr "Добави SQL база данни"
+msgstr ""
 
 msgid "Add SQL user"
 msgstr "Добави SQL-потребител"
@@ -613,13 +613,13 @@ msgid "Add catchall"
 msgstr ""
 
 msgid "Add custom DNS record"
-msgstr "Добавяне на собствен DNS запис"
+msgstr ""
 
 msgid "Add custom menu"
 msgstr ""
 
 msgid "Add customer"
-msgstr "Добави клиент"
+msgstr ""
 
 msgid "Add customer - Next step"
 msgstr ""
@@ -637,7 +637,7 @@ msgid "Add group"
 msgstr "Добави група"
 
 msgid "Add hosting plan"
-msgstr "Добави хостинг-план"
+msgstr ""
 
 msgid "Add new IP address"
 msgstr "Добави нов IP адрес"
@@ -667,7 +667,7 @@ msgid "Add reseller"
 msgstr "Добави риселър"
 
 msgid "Add subdomain"
-msgstr "Добави поддомейн"
+msgstr ""
 
 msgid "Add user"
 msgstr "Добави потребител"
@@ -837,7 +837,7 @@ msgid "Admin account successfully created."
 msgstr ""
 
 msgid "Admin log"
-msgstr "Админ Журнал"
+msgstr ""
 
 msgid "Admin not available"
 msgstr ""
@@ -1607,7 +1607,7 @@ msgid "Custom menu successfully updated."
 msgstr ""
 
 msgid "Custom menus"
-msgstr "Персонално меню"
+msgstr ""
 
 msgid "Customer"
 msgstr ""
@@ -1733,7 +1733,7 @@ msgid "Database with comma(s) in name is not accepted."
 msgstr ""
 
 msgid "Databases"
-msgstr "База данни"
+msgstr ""
 
 msgid "Date"
 msgstr "Дата"
@@ -2106,7 +2106,7 @@ msgid "Edit auto responder"
 msgstr ""
 
 msgid "Edit custom DNS record"
-msgstr "Промяна на потребителски DNS запис"
+msgstr ""
 
 msgid "Edit custom error page"
 msgstr ""
@@ -2121,7 +2121,7 @@ msgid "Edit domain"
 msgstr "Промяна на Домейн"
 
 msgid "Edit domain alias"
-msgstr "Редактиране  на псевдоним на домейн"
+msgstr ""
 
 msgid "Edit error page"
 msgstr "Редактиране  на страницата с грешки"
@@ -2136,7 +2136,7 @@ msgid "Edit htaccess user"
 msgstr ""
 
 msgid "Edit mail account"
-msgstr "Промяна на пощата"
+msgstr ""
 
 msgid "Edit mail quota"
 msgstr ""
@@ -2148,7 +2148,7 @@ msgid "Edit reseller"
 msgstr "Редакция на риселър"
 
 msgid "Edit subdomain"
-msgstr "Промяна на събдомейн "
+msgstr ""
 
 msgid "Edit user"
 msgstr "Проняна на потребител"
@@ -2397,7 +2397,7 @@ msgid "FileManager"
 msgstr "Файлов Мениджър"
 
 msgid "Filemanager"
-msgstr "Файл Мениджър"
+msgstr ""
 
 msgid "Filesystem system Info"
 msgstr "Информация за файловата система"
@@ -2476,7 +2476,7 @@ msgid "General information"
 msgstr "Обща информация"
 
 msgid "General settings"
-msgstr "Общи настройки"
+msgstr ""
 
 msgid "Generate"
 msgstr ""
@@ -2555,7 +2555,7 @@ msgid "Hosting plan values exceed your own limits."
 msgstr ""
 
 msgid "Hosting plans"
-msgstr "Хостинг-планове"
+msgstr ""
 
 msgid "Hosting plans available for"
 msgstr "Хостинг планове на разположение са"
@@ -2626,7 +2626,7 @@ msgid "IP management"
 msgstr ""
 
 msgid "IP usage"
-msgstr "Използвани IP-та"
+msgstr ""
 
 msgid "IPv6 address"
 msgstr "IPv6 Адрес"
@@ -3408,7 +3408,7 @@ msgid "Other settings"
 msgstr "Други настройки"
 
 msgid "Overview"
-msgstr "Преглед"
+msgstr ""
 
 msgid "Owner"
 msgstr "Собственик"
@@ -4399,7 +4399,7 @@ msgid "Service protocol"
 msgstr "Протокол на услугата "
 
 msgid "Services status"
-msgstr "Статус на Услугите "
+msgstr ""
 
 msgid "Sessions"
 msgstr ""
@@ -4671,7 +4671,7 @@ msgid "Submit changes"
 msgstr "Приеми промените"
 
 msgid "Support"
-msgstr "Поддръжка"
+msgstr ""
 
 msgid "Support system"
 msgstr "Служба за поддръжка"
@@ -4711,7 +4711,7 @@ msgid "System is unable to remove '%s' user logo."
 msgstr ""
 
 msgid "System tools"
-msgstr "Системни инструменти"
+msgstr ""
 
 msgid "System under maintenance"
 msgstr ""
@@ -5498,7 +5498,7 @@ msgid "Webmail"
 msgstr "Имейли"
 
 msgid "Webtools"
-msgstr "Уеб-инструменти"
+msgstr ""
 
 msgid "Welcome email"
 msgstr ""
@@ -6028,7 +6028,7 @@ msgid "i-MSCP plugin store"
 msgstr ""
 
 msgid "i-MSCP updates"
-msgstr "Обновяване на i-MSCP"
+msgstr ""
 
 msgid "i-MSCP version update checking is disabled"
 msgstr ""

@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-08 12:44+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: Vietnamese (http://www.transifex.com/projects/p/i-MSCP/language/vi/)\n"
 "MIME-Version: 1.0\n"
@@ -595,7 +595,7 @@ msgid "Add Htaccess user"
 msgstr ""
 
 msgid "Add SQL database"
-msgstr "Thêm cơ sở dữ liệu SQL"
+msgstr ""
 
 msgid "Add SQL user"
 msgstr ""
@@ -637,7 +637,7 @@ msgid "Add group"
 msgstr ""
 
 msgid "Add hosting plan"
-msgstr "Thêm kết hoạch thuê hosting"
+msgstr ""
 
 msgid "Add new IP address"
 msgstr ""
@@ -667,7 +667,7 @@ msgid "Add reseller"
 msgstr "Thêm nhà phân phối"
 
 msgid "Add subdomain"
-msgstr "Thêm tên miền con"
+msgstr ""
 
 msgid "Add user"
 msgstr "Thêm người dùng"
@@ -837,7 +837,7 @@ msgid "Admin account successfully created."
 msgstr ""
 
 msgid "Admin log"
-msgstr "Nhật trình quản trị"
+msgstr ""
 
 msgid "Admin not available"
 msgstr ""
@@ -1607,7 +1607,7 @@ msgid "Custom menu successfully updated."
 msgstr ""
 
 msgid "Custom menus"
-msgstr "Menu tùy chọn"
+msgstr ""
 
 msgid "Customer"
 msgstr ""
@@ -2397,7 +2397,7 @@ msgid "FileManager"
 msgstr "Trình quản lý tập tin"
 
 msgid "Filemanager"
-msgstr "Trình quản lý tập tin"
+msgstr ""
 
 msgid "Filesystem system Info"
 msgstr ""
@@ -2476,7 +2476,7 @@ msgid "General information"
 msgstr "Thông tin tổng quan"
 
 msgid "General settings"
-msgstr "Thiết lập chung"
+msgstr ""
 
 msgid "Generate"
 msgstr ""
@@ -2555,7 +2555,7 @@ msgid "Hosting plan values exceed your own limits."
 msgstr ""
 
 msgid "Hosting plans"
-msgstr "Kế hoạch thuê hosting"
+msgstr ""
 
 msgid "Hosting plans available for"
 msgstr ""
@@ -2626,7 +2626,7 @@ msgid "IP management"
 msgstr ""
 
 msgid "IP usage"
-msgstr "Cách dùng địa chỉ IP"
+msgstr ""
 
 msgid "IPv6 address"
 msgstr ""
@@ -3408,7 +3408,7 @@ msgid "Other settings"
 msgstr ""
 
 msgid "Overview"
-msgstr "Sơ lược"
+msgstr ""
 
 msgid "Owner"
 msgstr "Người sở hữu"
@@ -3596,7 +3596,7 @@ msgid "Phone"
 msgstr "Điện thoại"
 
 msgid "PhpMyAdmin"
-msgstr "PhpMyAdmin"
+msgstr ""
 
 msgid "PiB"
 msgstr ""
@@ -4399,7 +4399,7 @@ msgid "Service protocol"
 msgstr ""
 
 msgid "Services status"
-msgstr "Trạng thái dịch vụ"
+msgstr ""
 
 msgid "Sessions"
 msgstr ""
@@ -4711,7 +4711,7 @@ msgid "System is unable to remove '%s' user logo."
 msgstr ""
 
 msgid "System tools"
-msgstr "Công cụ hệ thống"
+msgstr ""
 
 msgid "System under maintenance"
 msgstr ""
@@ -5498,7 +5498,7 @@ msgid "Webmail"
 msgstr "Webmail"
 
 msgid "Webtools"
-msgstr "Webtools"
+msgstr ""
 
 msgid "Welcome email"
 msgstr ""
@@ -6028,7 +6028,7 @@ msgid "i-MSCP plugin store"
 msgstr ""
 
 msgid "i-MSCP updates"
-msgstr "Cập nhật i-MSCP"
+msgstr ""
 
 msgid "i-MSCP version update checking is disabled"
 msgstr ""

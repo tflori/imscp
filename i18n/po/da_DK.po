@@ -4,14 +4,15 @@
 # 
 # Translators:
 # HenrikS <henrik@schytte.net>, 2011
+# i-MSCP <team@i-mscp.net>, 2015
 # Laurent Declercq <l.declercq@nuxwin.com>, 2014
 # Michael Jensen-Maar <maar@maargrafisk.dk>, 2013,2015
 msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-08 13:19+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: Danish (Denmark) (http://www.transifex.com/projects/p/i-MSCP/language/da_DK/)\n"
 "MIME-Version: 1.0\n"
@@ -587,7 +588,7 @@ msgid "Add / Edit SSL certificate"
 msgstr "Rediger SSL certifikat"
 
 msgid "Add FTP account"
-msgstr "Tilføj FTP konto"
+msgstr ""
 
 msgid "Add Htaccess group"
 msgstr "Tilføj Htaccess gruppe"
@@ -2398,7 +2399,7 @@ msgid "FileManager"
 msgstr "Fil Håndtering"
 
 msgid "Filemanager"
-msgstr "Fil Håndtering"
+msgstr ""
 
 msgid "Filesystem system Info"
 msgstr "Filsystem info"
@@ -2875,7 +2876,7 @@ msgid "Language successfully updated."
 msgstr "Sprog korrekt opdateret."
 
 msgid "Languages"
-msgstr "Sprog"
+msgstr ""
 
 msgid "Languages index was successfully re-built."
 msgstr "Sprog-indekset blev succesfuldt genopbygget."

@@ -5,6 +5,60 @@ Git 1.2.x
 ------------------------------------------------------------------------------------------------------------------------
 
 BACKEND
+	Fixed: Bad SQL query which leads to orphaned entries in the admin table, and which is cause of several side effects
+		such as many bad request errors (e.g: when editing a reseller, or when accessing its statistics...)
+	Fixed: Usage of portable syntax over Bash 4 syntax (I/O Redirection)
+	Fixed: Wrong syntax for the nice command (at several places)
+
+FRONTEND
+	Fixed: ID mismatch when the created_by field of a reseller is unknown (edit and delete links)
+	Fixed: Don't add the default ports (80/443) in notifications when not needed (e.g: when using PanelRedirect plugin)
+i18N
+	Removed: Untranslated languages - Breton (br), Czech (cz), Galician (gl), Georgian (ka), Hebrew (he_IL),
+		Icelandic (is_IS), Serbian (sr) and Spanish (es)
+
+YOUTRACK
+	Fixed: #IP-1357: Built in Support Ticket shows wrong URL (missing Control Panel Port)
+
+------------------------------------------------------------------------------------------------------------------------
+1.2.4
+------------------------------------------------------------------------------------------------------------------------
+
+2015-06-12: Laurent Declercq
+	RELEASE i-MSCP 1.2.4
+
+BACKEND
+	Fixed: Both CPU and I/O priorities must be reduced to mitigate high load and latencys (backup scripts)
+	Fixed: Depending on the context, some service providers are not initialized
+	Fixed: Removed warning for inexistent mail directories (backup script)
+	Fixed: Services are started instead of being reloaded when already running (iMSCP::Provider::Service::Upstart)
+	Fixed: Undefined domain_status field (Modules::Domain)
+	Fixed: Warnings must not be turned into errors (backup script)
+	Fixed: Wrong return value on failure (request manager)
+
+CONFIGS
+	Added: courier-authdaemon init script - Init script provided by Ubuntu do not work (Ubuntu only)
+	Added: ProxyTimeout setting into 00_nameserver.conf Apache2 configuration file
+	Added: types_hash_max_size setting in nginx.conf configuration file
+
+FRONTEND
+	Added: Cache support for navigation translation files
+	Fixed: Unable to set language
+
+PACKAGES
+	Fixed: users.mail_host field must be set to 'localhost' (Package::Webmail::Roundcube::Installer)
+
+YOUTRACK
+	Fixed: #IP-1353: i18n issue - Admin / System information not translatable
+
+------------------------------------------------------------------------------------------------------------------------
+1.2.3
+------------------------------------------------------------------------------------------------------------------------
+
+2015-06-07: Laurent Declercq
+	RELEASE i-MSCP 1.2.3
+
+BACKEND
 	Added: Custom DNS module (Modules::CustomDNS)
 	Added: Mail support in backup feature
 	Added: New 'temporary' attribute which allow to override configuration values temporarily (iMSCP::Config)

@@ -209,16 +209,14 @@ function generateNavigation($tpl)
 	/** @var $cfg iMSCP_Config_Handler_File */
 	$cfg = iMSCP_Registry::get('config');
 
-	$tpl->define_dynamic(
-		array(
-			'main_menu' => 'layout',
-			'main_menu_block' => 'main_menu',
-			'menu' => 'layout',
-			'left_menu_block' => 'menu',
-			'breadcrumbs' => 'layout',
-			'breadcrumb_block' => 'breadcrumbs'
-		)
-	);
+	$tpl->define_dynamic(array(
+		'main_menu' => 'layout',
+		'main_menu_block' => 'main_menu',
+		'menu' => 'layout',
+		'left_menu_block' => 'menu',
+		'breadcrumbs' => 'layout',
+		'breadcrumb_block' => 'breadcrumbs'
+	));
 
 	generateLoggedFrom($tpl);
 
@@ -226,20 +224,20 @@ function generateNavigation($tpl)
 	$navigation = iMSCP_Registry::get('navigation');
 
 	// Dynamic links (only at customer level)
-	if(isset($_SESSION['user_type']) && $_SESSION['user_type'] == 'user') {
+	if (isset($_SESSION['user_type']) && $_SESSION['user_type'] == 'user') {
 		$domainProperties = get_domain_default_props($_SESSION['user_id']);
 
 		$tpl->assign('WEBSTATS_PATH', 'http://' . decode_idna($domainProperties['domain_name']) . '/stats');
 
-		if(customerHasFeature('mail')) {
+		if (customerHasFeature('mail')) {
 			$webmails = getWebmailList();
 
-			if(!empty($webmails)) {
+			if (!empty($webmails)) {
 				$page1 = $navigation->findOneBy('class', 'email');
 				$page2 = $navigation->findOneBy('class', 'webtools');
 
-				foreach($webmails as $webmail) {
-					$page =array(
+				foreach ($webmails as $webmail) {
+					$page = array(
 						'label' => tr('%s webmail', $webmail),
 						'uri' => '/' . (($webmail == 'Roundcube') ? 'webmail' : strtolower($webmail)),
 						'target' => '_blank',
@@ -251,8 +249,8 @@ function generateNavigation($tpl)
 			}
 		}
 	} else {
-		if($cfg['HOSTING_PLANS_LEVEL'] != $_SESSION['user_type']) {
-			if($_SESSION['user_type'] === 'admin') {
+		if ($cfg['HOSTING_PLANS_LEVEL'] != $_SESSION['user_type']) {
+			if ($_SESSION['user_type'] === 'admin') {
 				$navigation->findOneBy('class', 'hosting_plans')->setVisible(false);
 			} else {
 				$navigation->findOneBy('class', 'hosting_plan_add')->setVisible(false);
@@ -261,52 +259,48 @@ function generateNavigation($tpl)
 	}
 
 	// Dynamic links (All levels)
-	$tpl->assign(
-		array(
-			'SUPPORT_SYSTEM_PATH' => 'ticket_system.php',
-			'SUPPORT_SYSTEM_TARGET' => '_self'
-		)
-	);
+	$tpl->assign(array(
+		'SUPPORT_SYSTEM_PATH' => 'ticket_system.php',
+		'SUPPORT_SYSTEM_TARGET' => '_self'
+	));
 
 	// Remove support system page if feature is globally disabled
-	if(!$cfg['IMSCP_SUPPORT_SYSTEM']) {
+	if (!$cfg['IMSCP_SUPPORT_SYSTEM']) {
 		$navigation->removePage($navigation->findOneBy('class', 'support'));
 	}
 
 	// Custom menus
-	if(null != ($customMenus = getCustomMenus($_SESSION['user_type']))) {
-		foreach($customMenus as $customMenu) {
-			$navigation->addPage(
-				array(
-					'order' => $customMenu['menu_order'],
-					'label' => tohtml($customMenu['menu_name']),
-					'uri' => get_menu_vars($customMenu['menu_link']),
-					'target' => (!empty($customMenu['menu_target']) ? tohtml($customMenu['menu_target']) : '_self'),
-					'class' => 'custom_link'
-				)
-			);
+	if (null != ($customMenus = getCustomMenus($_SESSION['user_type']))) {
+		foreach ($customMenus as $customMenu) {
+			$navigation->addPage(array(
+				'order' => $customMenu['menu_order'],
+				'label' => tohtml($customMenu['menu_name']),
+				'uri' => get_menu_vars($customMenu['menu_link']),
+				'target' => (!empty($customMenu['menu_target']) ? tohtml($customMenu['menu_target']) : '_self'),
+				'class' => 'custom_link'
+			));
 		}
 	}
 
 	/** @var $activePage Zend_Navigation_Page_Uri */
-	foreach($navigation->findAllBy('uri', $_SERVER['SCRIPT_NAME']) as $activePage) {
+	foreach ($navigation->findAllBy('uri', $_SERVER['SCRIPT_NAME']) as $activePage) {
 		$activePage->setActive();
 	}
 
-	if(!empty($_GET)) {
+	if (!empty($_GET)) {
 		$query = '?' . http_build_query($_GET);
 	} else {
 		$query = '';
 	}
 
 	/** @var $page Zend_Navigation_Page */
-	foreach($navigation as $page) {
-		if(null !== ($callbacks = $page->get('privilege_callback'))) {
+	foreach ($navigation as $page) {
+		if (null !== ($callbacks = $page->get('privilege_callback'))) {
 			$callbacks = (isset($callbacks['name'])) ? array($callbacks) : $callbacks;
 
-			foreach($callbacks as $callback) {
-				if(is_callable($callback['name'])) {
-					if(!call_user_func_array($callback['name'], isset($callback['param']) ? (array)$callback['param'] : array())) {
+			foreach ($callbacks as $callback) {
+				if (is_callable($callback['name'])) {
+					if (!call_user_func_array($callback['name'], isset($callback['param']) ? (array)$callback['param'] : array())) {
 						continue 2;
 					}
 				} else {
@@ -316,41 +310,40 @@ function generateNavigation($tpl)
 			}
 		}
 
-		if($page->isVisible()) {
-			$tpl->assign(
-				array(
-					'HREF' => $page->getHref(),
-					'CLASS' => $page->getClass() . (($_SESSION['show_main_menu_labels']) ? ' show_labels' : ''),
-					'IS_ACTIVE_CLASS' => ($page->isActive(true)) ? 'active' : 'dummy',
-					'LABEL' => tr($page->getLabel()),
-					'TARGET' => ($page->getTarget()) ? $page->getTarget() : '_self',
-					'LINK_LABEL' => ($_SESSION['show_main_menu_labels']) ? tr($page->getLabel()) : ''
-				)
-			);
+		if ($page->isVisible()) {
+			$tpl->assign(array(
+				'HREF' => $page->getHref(),
+				'CLASS' => $page->getClass() . (($_SESSION['show_main_menu_labels']) ? ' show_labels' : ''),
+				'IS_ACTIVE_CLASS' => ($page->isActive(true)) ? 'active' : 'dummy',
+				'TARGET' => ($page->getTarget()) ? tohtml($page->getTarget()) : '_self',
+				'MAIN_MENU_LABEL_TOOLTIP' => tohtml($page->getLabel(), 'htmlAttr'),
+				'MAIN_MENU_LABEL' => ($_SESSION['show_main_menu_labels']) ? tohtml($page->getLabel()) : ''
+			));
 
 			// Add page to main menu
 			$tpl->parse('MAIN_MENU_BLOCK', '.main_menu_block');
 
-			if($page->isActive(true)) {
-				$tpl->assign(
-					array(
-						'TR_SECTION_TITLE' => tr($page->getLabel()),
-						'SECTION_TITLE_CLASS' => $page->getClass()));
+			if ($page->isActive(true)) {
+				$tpl->assign(array(
+					'TR_SECTION_TITLE' => tohtml($page->getLabel()),
+					'SECTION_TITLE_CLASS' => $page->getClass()
+				));
 
 				// Add page to breadcrumb
+				$tpl->assign('BREADCRUMB_LABEL', tohtml($page->getLabel()));
 				$tpl->parse('BREADCRUMB_BLOCK', '.breadcrumb_block');
 
-				if($page->hasPages()) {
+				if ($page->hasPages()) {
 					$iterator = new RecursiveIteratorIterator($page, RecursiveIteratorIterator::SELF_FIRST);
 
 					/** @var $subpage Zend_Navigation_Page_Uri */
-					foreach($iterator as $subpage) {
-						if(null !== ($callbacks = $subpage->get('privilege_callback'))) {
+					foreach ($iterator as $subpage) {
+						if (null !== ($callbacks = $subpage->get('privilege_callback'))) {
 							$callbacks = (isset($callbacks['name'])) ? array($callbacks) : $callbacks;
 
-							foreach($callbacks AS $callback) {
-								if(is_callable($callback['name'])) {
-									if(!call_user_func_array(
+							foreach ($callbacks AS $callback) {
+								if (is_callable($callback['name'])) {
+									if (!call_user_func_array(
 										$callback['name'],
 										isset($callback['param']) ? (array)$callback['param'] : array())
 									) {
@@ -363,36 +356,34 @@ function generateNavigation($tpl)
 							}
 						}
 
-						$tpl->assign(
-							array(
-								'HREF' => $subpage->getHref(),
-								'IS_ACTIVE_CLASS' => ($subpage->isActive(true)) ? 'active' : 'dummy',
-								'LABEL' => tr($subpage->getLabel()),
-								'TARGET' => ($subpage->getTarget()) ? $subpage->getTarget() : '_self'
-							)
-						);
+						$tpl->assign(array(
+							'HREF' => $subpage->getHref(),
+							'IS_ACTIVE_CLASS' => ($subpage->isActive(true)) ? 'active' : 'dummy',
+							'LEFT_MENU_LABEL' => tohtml($subpage->getLabel()),
+							'TARGET' => ($subpage->getTarget()) ? $subpage->getTarget() : '_self'
+						));
 
-						if($subpage->isVisible()) {
+						if ($subpage->isVisible()) {
 							// Add subpage to left menu
 							$tpl->parse('LEFT_MENU_BLOCK', '.left_menu_block');
 						}
 
-						if($subpage->isActive(true)) {
-							$tpl->assign(
-								array(
-									'TR_TITLE' => ($subpage->get('dynamic_title'))
-										? $subpage->get('dynamic_title') : tr($subpage->getLabel()),
-									'TITLE_CLASS' => $subpage->get('title_class')
-								)
-							);
+						if ($subpage->isActive(true)) {
+							$tpl->assign(array(
+								'TR_TITLE' => ($subpage->get('dynamic_title'))
+									? $subpage->get('dynamic_title') : tohtml($subpage->getLabel()),
+								'TITLE_CLASS' => $subpage->get('title_class')
+							));
 
-							if(!$subpage->hasPages()) {
+							if (!$subpage->hasPages()) {
 								$tpl->assign('HREF', $subpage->getHref() . "$query");
 							}
 
 							// ad subpage to breadcrumbs
-							if(null != ($label = $subpage->get('dynamic_title'))) {
-								$tpl->assign('LABEL', $label);
+							if (null != ($label = $subpage->get('dynamic_title'))) {
+								$tpl->assign('MENU_LABEL_TOOLTIP', tohtml($label));
+							} else {
+								$tpl->assign('BREADCRUMB_LABEL', tohtml($subpage->getLabel()));
 							}
 
 							$tpl->parse('BREADCRUMB_BLOCK', '.breadcrumb_block');
@@ -412,14 +403,12 @@ function generateNavigation($tpl)
 	$tpl->parse('MENU', 'menu');
 
 	// Static variables
-	$tpl->assign(
-		array(
-			'TR_MENU_LOGOUT' => tr('Logout'),
-			'VERSION' => (isset($cfg['Version']) && $cfg['Version'] != '') ? $cfg['Version'] : tr('Unknown'),
-			'BUILDDATE' => (isset($cfg['BuildDate']) && $cfg['BuildDate'] != '') ? $cfg['BuildDate'] : tr('Unavailable'),
-			'CODENAME' => (isset($cfg['CodeName']) && $cfg['CodeName'] != '') ? $cfg['CodeName'] : tr('Unknown')
-		)
-	);
+	$tpl->assign(array(
+		'TR_MENU_LOGOUT' => tr('Logout'),
+		'VERSION' => (isset($cfg['Version']) && $cfg['Version'] != '') ? $cfg['Version'] : tohtml(tr('Unknown')),
+		'BUILDDATE' => (isset($cfg['BuildDate']) && $cfg['BuildDate'] != '') ? $cfg['BuildDate'] : tohtml(tr('Unavailable')),
+		'CODENAME' => (isset($cfg['CodeName']) && $cfg['CodeName'] != '') ? $cfg['CodeName'] : tohtml(tr('Unknown'))
+	));
 
 	iMSCP_Events_Aggregator::getInstance()->dispatch(
 		iMSCP_Events::onAfterGenerateNavigation, array('templateEngine' => $tpl)
@@ -515,23 +504,19 @@ function gen_admin_list($tpl)
 	);
 
 	if(!$stmt->rowCount()) {
-		$tpl->assign(
-			array(
-				'ADMIN_MESSAGE' => tr('No administrator accounts found.'),
-				'ADMIN_LIST' => ''
-			)
-		);
+		$tpl->assign(array(
+			'ADMIN_MESSAGE' => tr('No administrator accounts found.'),
+			'ADMIN_LIST' => ''
+		));
 
 		$tpl->parse('ADMIN_MESSAGE', 'admin_message');
 	} else {
-		$tpl->assign(
-			array(
-				'TR_ADMIN_USERNAME' => tr('Username'),
-				'TR_ADMIN_CREATED_ON' => tr('Creation date'),
-				'TR_ADMIN_CREATED_BY' => tr('Created by'),
-				'TR_ADMIN_ACTIONS' => tr('Actions')
-			)
-		);
+		$tpl->assign(array(
+			'TR_ADMIN_USERNAME' => tr('Username'),
+			'TR_ADMIN_CREATED_ON' => tr('Creation date'),
+			'TR_ADMIN_CREATED_BY' => tr('Created by'),
+			'TR_ADMIN_ACTIONS' => tr('Actions')
+		));
 
 		while($row = $stmt->fetchRow(PDO::FETCH_ASSOC)) {
 			$adminCreated = $row['domain_created'];
@@ -543,31 +528,25 @@ function gen_admin_list($tpl)
 				$adminCreated = date($dateFormat, $adminCreated);
 			}
 
-			if($row['created_by'] == '' || $row['admin_id'] == $_SESSION['user_id']) {
-
+			if(empty($row['created_by']) || $row['admin_id'] == $_SESSION['user_id']) {
 				$tpl->assign('ADMIN_DELETE_LINK', '');
-				$tpl->parse('ADMIN_DELETE_SHOW', 'admin_delete_show');
 			} else {
-				$tpl->assign(
-					array(
-						'ADMIN_DELETE_SHOW' => '',
-						'TR_DELETE' => tr('Delete'),
-						'URL_DELETE_ADMIN' => 'user_delete.php?delete_id=' . $row['admin_id'],
-						'ADMIN_USERNAME' => tohtml($row['admin_name'])
-					)
-				);
+				$tpl->assign(array(
+					'ADMIN_DELETE_SHOW' => '',
+					'TR_DELETE' => tr('Delete'),
+					'URL_DELETE_ADMIN' => 'user_delete.php?delete_id=' . $row['admin_id'],
+					'ADMIN_USERNAME' => tohtml($row['admin_name'])
+				));
 
 				$tpl->parse('ADMIN_DELETE_LINK', 'admin_delete_link');
 			}
 
-			$tpl->assign(
-				array(
-					'ADMIN_USERNAME' => tohtml($row['admin_name']),
-					'ADMIN_CREATED_ON' => tohtml($adminCreated),
-					'ADMIN_CREATED_BY' => ($row['created_by'] != '') ? tohtml($row['created_by']) : tr('System'),
-					'URL_EDIT_ADMIN' => 'admin_edit.php?edit_id=' . $row['admin_id']
-				)
-			);
+			$tpl->assign(array(
+				'ADMIN_USERNAME' => tohtml($row['admin_name']),
+				'ADMIN_CREATED_ON' => tohtml($adminCreated),
+				'ADMIN_CREATED_BY' => ($row['created_by'] != '') ? tohtml($row['created_by']) : tr('System'),
+				'URL_EDIT_ADMIN' => 'admin_edit.php?edit_id=' . $row['admin_id']
+			));
 
 			$tpl->parse('ADMIN_ITEM', '.admin_item');
 		}
@@ -604,47 +583,27 @@ function gen_reseller_list($tpl)
 	);
 
 	if(!$stmt->rowCount()) {
-		$tpl->assign(
-			array(
-				'RSL_MESSAGE' => tr('No reseller accounts found.'),
-				'RSL_LIST' => ''
-			)
-		);
+		$tpl->assign(array(
+			'RSL_MESSAGE' => tr('No reseller accounts found.'),
+			'RSL_LIST' => ''
+		));
 
 		$tpl->parse('RSL_MESSAGE', 'rsl_message');
 	} else {
-		$tpl->assign(
-			array(
-				'TR_RSL_USERNAME' => tr('Username'),
-				'TR_RSL_CREATED_BY' => tr('Created by'),
-				'TR_RSL_ACTIONS' => tr('Actions')
-			)
-		);
+		$tpl->assign(array(
+			'TR_RSL_USERNAME' => tr('Username'),
+			'TR_RSL_CREATED_BY' => tr('Created by'),
+			'TR_RSL_ACTIONS' => tr('Actions')
+		));
 
 		while($row = $stmt->fetchRow(PDO::FETCH_ASSOC)) {
-			if($row['created_by'] == '') {
-				$tpl->assign(
-					array(
-						'TR_DELETE' => tr('Delete'),
-						'RSL_DELETE_LINK' => ''
-					)
-				);
-
-				$tpl->parse('RSL_DELETE_SHOW', 'rsl_delete_show');
-			} else {
-				$tpl->assign(
-					array(
-						'RSL_DELETE_SHOW' => '',
-						'TR_DELETE' => tr('Delete'),
-						'URL_DELETE_RSL' => 'user_delete.php?delete_id=' . $row['admin_id'],
-						'TR_CHANGE_USER_INTERFACE' => tr('Switch to user interface'),
-						'GO_TO_USER_INTERFACE' => tr('Switch'),
-						'URL_CHANGE_INTERFACE' => 'change_user_interface.php?to_id=' . $row['admin_id']
-					)
-				);
-
-				$tpl->parse('RSL_DELETE_LINK', 'rsl_delete_link');
-			}
+			$tpl->assign(array(
+				'TR_DELETE' => tr('Delete'),
+				'URL_DELETE_RSL' => 'user_delete.php?delete_id=' . $row['admin_id'],
+				'TR_CHANGE_USER_INTERFACE' => tohtml(tr('Switch to user interface'), 'htmlAttr'),
+				'GO_TO_USER_INTERFACE' => tr('Switch'),
+				'URL_CHANGE_INTERFACE' => 'change_user_interface.php?to_id=' . $row['admin_id']
+			));
 
 			$resellerCreated = $row['domain_created'];
 
@@ -655,14 +614,12 @@ function gen_reseller_list($tpl)
 				$resellerCreated = date($date_formt, $resellerCreated);
 			}
 
-			$tpl->assign(
-				array(
-					'RSL_USERNAME' => tohtml($row['admin_name']),
-					'RESELLER_CREATED_ON' => tohtml($resellerCreated),
-					'RSL_CREATED_BY' => ($row['created_by'] != '') ? tohtml($row['created_by']) : tr('Unknown'),
-					'URL_EDIT_RSL' => 'reseller_edit.php?edit_id=' . $row['admin_id']
-				)
-			);
+			$tpl->assign(array(
+				'RSL_USERNAME' => tohtml($row['admin_name']),
+				'RESELLER_CREATED_ON' => tohtml($resellerCreated),
+				'RSL_CREATED_BY' => ($row['created_by'] != '') ? tohtml($row['created_by']) : tr('Unknown'),
+				'URL_EDIT_RSL' => 'reseller_edit.php?edit_id=' . $row['admin_id']
+			));
 
 			$tpl->parse('RSL_ITEM', '.rsl_item');
 		}

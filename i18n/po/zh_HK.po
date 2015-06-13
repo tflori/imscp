@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-08 12:44+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: Chinese (Hong Kong) (http://www.transifex.com/projects/p/i-MSCP/language/zh_HK/)\n"
 "MIME-Version: 1.0\n"
@@ -594,7 +594,7 @@ msgid "Add Htaccess user"
 msgstr ""
 
 msgid "Add SQL database"
-msgstr "增加 SQL 資料庫"
+msgstr ""
 
 msgid "Add SQL user"
 msgstr "增加 SQL 使用者"
@@ -636,7 +636,7 @@ msgid "Add group"
 msgstr "增加組"
 
 msgid "Add hosting plan"
-msgstr "增加託管計劃"
+msgstr ""
 
 msgid "Add new IP address"
 msgstr ""
@@ -666,7 +666,7 @@ msgid "Add reseller"
 msgstr "增加代理商"
 
 msgid "Add subdomain"
-msgstr "增加子網域"
+msgstr ""
 
 msgid "Add user"
 msgstr "增加使用者"
@@ -836,7 +836,7 @@ msgid "Admin account successfully created."
 msgstr ""
 
 msgid "Admin log"
-msgstr "管理員日誌"
+msgstr ""
 
 msgid "Admin not available"
 msgstr ""
@@ -1606,7 +1606,7 @@ msgid "Custom menu successfully updated."
 msgstr ""
 
 msgid "Custom menus"
-msgstr "自定義功能表"
+msgstr ""
 
 msgid "Customer"
 msgstr ""
@@ -2120,7 +2120,7 @@ msgid "Edit domain"
 msgstr "編輯網域"
 
 msgid "Edit domain alias"
-msgstr "編輯網域別名"
+msgstr ""
 
 msgid "Edit error page"
 msgstr "編輯錯誤頁"
@@ -2396,7 +2396,7 @@ msgid "FileManager"
 msgstr ""
 
 msgid "Filemanager"
-msgstr "文件管理器"
+msgstr ""
 
 msgid "Filesystem system Info"
 msgstr "檔案系統資訊"
@@ -2475,7 +2475,7 @@ msgid "General information"
 msgstr "概要訊息"
 
 msgid "General settings"
-msgstr "一般設定"
+msgstr ""
 
 msgid "Generate"
 msgstr ""
@@ -2554,7 +2554,7 @@ msgid "Hosting plan values exceed your own limits."
 msgstr ""
 
 msgid "Hosting plans"
-msgstr "託管計劃"
+msgstr ""
 
 msgid "Hosting plans available for"
 msgstr "可用的託管計劃用於"
@@ -3407,7 +3407,7 @@ msgid "Other settings"
 msgstr "其他設定"
 
 msgid "Overview"
-msgstr "概覽"
+msgstr ""
 
 msgid "Owner"
 msgstr "擁有人"
@@ -3595,7 +3595,7 @@ msgid "Phone"
 msgstr "電話"
 
 msgid "PhpMyAdmin"
-msgstr "PhpMyAdmin"
+msgstr ""
 
 msgid "PiB"
 msgstr ""
@@ -4398,7 +4398,7 @@ msgid "Service protocol"
 msgstr "協議"
 
 msgid "Services status"
-msgstr "伺服器狀態"
+msgstr ""
 
 msgid "Sessions"
 msgstr ""
@@ -4710,7 +4710,7 @@ msgid "System is unable to remove '%s' user logo."
 msgstr ""
 
 msgid "System tools"
-msgstr "系統工具"
+msgstr ""
 
 msgid "System under maintenance"
 msgstr ""
@@ -5497,7 +5497,7 @@ msgid "Webmail"
 msgstr "網頁郵件"
 
 msgid "Webtools"
-msgstr "Web工具"
+msgstr ""
 
 msgid "Welcome email"
 msgstr ""
@@ -6027,7 +6027,7 @@ msgid "i-MSCP plugin store"
 msgstr ""
 
 msgid "i-MSCP updates"
-msgstr "i-MSCP 更新"
+msgstr ""
 
 msgid "i-MSCP version update checking is disabled"
 msgstr ""

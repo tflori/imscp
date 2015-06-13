@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-08 12:44+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: Norwegian Bokmål (Norway) (http://www.transifex.com/projects/p/i-MSCP/language/nb_NO/)\n"
 "MIME-Version: 1.0\n"
@@ -594,7 +594,7 @@ msgid "Add Htaccess user"
 msgstr ""
 
 msgid "Add SQL database"
-msgstr "Legg til SQL database"
+msgstr ""
 
 msgid "Add SQL user"
 msgstr "Legg til SQL bruker"
@@ -636,7 +636,7 @@ msgid "Add group"
 msgstr "Legg til gruppe"
 
 msgid "Add hosting plan"
-msgstr "Legg til betalingsløsning"
+msgstr ""
 
 msgid "Add new IP address"
 msgstr ""
@@ -666,7 +666,7 @@ msgid "Add reseller"
 msgstr "Legg til forhandler"
 
 msgid "Add subdomain"
-msgstr "Legg til underdomene"
+msgstr ""
 
 msgid "Add user"
 msgstr "Legg til bruker"
@@ -836,7 +836,7 @@ msgid "Admin account successfully created."
 msgstr ""
 
 msgid "Admin log"
-msgstr "Admin logg"
+msgstr ""
 
 msgid "Admin not available"
 msgstr ""
@@ -1606,7 +1606,7 @@ msgid "Custom menu successfully updated."
 msgstr ""
 
 msgid "Custom menus"
-msgstr "Egendefinerte menyer"
+msgstr ""
 
 msgid "Customer"
 msgstr ""
@@ -2120,7 +2120,7 @@ msgid "Edit domain"
 msgstr "Domene innstillinger"
 
 msgid "Edit domain alias"
-msgstr "Endre domene pekere"
+msgstr ""
 
 msgid "Edit error page"
 msgstr ""
@@ -2396,7 +2396,7 @@ msgid "FileManager"
 msgstr "Filbehandler"
 
 msgid "Filemanager"
-msgstr "Filbehandler"
+msgstr ""
 
 msgid "Filesystem system Info"
 msgstr "Filsystem informasjon"
@@ -2475,7 +2475,7 @@ msgid "General information"
 msgstr "Generell informasjon"
 
 msgid "General settings"
-msgstr "Generelle instillinger"
+msgstr ""
 
 msgid "Generate"
 msgstr ""
@@ -2554,7 +2554,7 @@ msgid "Hosting plan values exceed your own limits."
 msgstr ""
 
 msgid "Hosting plans"
-msgstr "Betalingsplaner"
+msgstr ""
 
 msgid "Hosting plans available for"
 msgstr "Betalingsløsninger tilgjengelig for"
@@ -3407,7 +3407,7 @@ msgid "Other settings"
 msgstr "Andre instillinger"
 
 msgid "Overview"
-msgstr "Oversikt"
+msgstr ""
 
 msgid "Owner"
 msgstr "Eier"
@@ -3595,7 +3595,7 @@ msgid "Phone"
 msgstr "Telefon"
 
 msgid "PhpMyAdmin"
-msgstr "PhpMyAdmin"
+msgstr ""
 
 msgid "PiB"
 msgstr ""
@@ -4398,7 +4398,7 @@ msgid "Service protocol"
 msgstr "Protokoll"
 
 msgid "Services status"
-msgstr "Server status"
+msgstr ""
 
 msgid "Sessions"
 msgstr ""
@@ -4710,7 +4710,7 @@ msgid "System is unable to remove '%s' user logo."
 msgstr ""
 
 msgid "System tools"
-msgstr "Systemverktøy"
+msgstr ""
 
 msgid "System under maintenance"
 msgstr ""
@@ -5497,7 +5497,7 @@ msgid "Webmail"
 msgstr "Webmail"
 
 msgid "Webtools"
-msgstr "Webverktøy"
+msgstr ""
 
 msgid "Welcome email"
 msgstr ""
@@ -6027,7 +6027,7 @@ msgid "i-MSCP plugin store"
 msgstr ""
 
 msgid "i-MSCP updates"
-msgstr "i-MSCP oppdateringer"
+msgstr ""
 
 msgid "i-MSCP version update checking is disabled"
 msgstr ""

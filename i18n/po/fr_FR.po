@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-10 23:42+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: French (France) (http://www.transifex.com/projects/p/i-MSCP/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
@@ -600,13 +600,13 @@ msgid "Add FTP account"
 msgstr "Ajouter un compte FTP"
 
 msgid "Add Htaccess group"
-msgstr "Ajouter un group Htaccess"
+msgstr "Ajouter un groupe Htaccess"
 
 msgid "Add Htaccess user"
 msgstr "Ajouter un utilisateur Htaccess"
 
 msgid "Add SQL database"
-msgstr "Ajouter une base de données"
+msgstr "Ajouter une base de données SQL"
 
 msgid "Add SQL user"
 msgstr "Ajouter un utilisateur SQL"
@@ -621,7 +621,7 @@ msgid "Add admin"
 msgstr "Ajouter un administrateur"
 
 msgid "Add catchall"
-msgstr "Ajouter catchall"
+msgstr "Ajouter collecteur"
 
 msgid "Add custom DNS record"
 msgstr "Ajouter un enregistrement DNS personnalisé"
@@ -639,7 +639,7 @@ msgid "Add domain alias"
 msgstr "Ajouter un alias de domaine"
 
 msgid "Add email account"
-msgstr "Ajouter un compte email"
+msgstr "Ajouter un compte e-mail"
 
 msgid "Add external mail server for {DOMAIN_UTF8}"
 msgstr "Ajouter un serveur e-mail externe pour {DOMAIN_UTF8}"
@@ -648,7 +648,7 @@ msgid "Add group"
 msgstr "Ajouter un groupe"
 
 msgid "Add hosting plan"
-msgstr "Ajouter un plan d'hébergerment"
+msgstr "Ajouter un plan d'hébergement"
 
 msgid "Add new IP address"
 msgstr "Ajouter une nouvelle adresse IP"
@@ -678,7 +678,7 @@ msgid "Add reseller"
 msgstr "Ajouter un revendeur"
 
 msgid "Add subdomain"
-msgstr "Créer un sous-domaine"
+msgstr "Ajouter un sous-domaine"
 
 msgid "Add user"
 msgstr "Ajouter un utilisateur"
@@ -771,12 +771,12 @@ msgid "Admin / Statistics / Reseller Statistics"
 msgstr "Administrateur / Statistiques / Statistiques des revendeurs"
 
 msgid "Admin / Statistics / Reseller Statistics / User Statistics"
-msgstr ""
+msgstr "Administrateur / Statistiques / Statisques Des Revendeurs / Statistiques Des Utilisateurs"
 
 msgid ""
 "Admin / Statistics / Reseller Statistics / User Statistics / {USERNAME} user"
 " statistics"
-msgstr ""
+msgstr "Administrateur / Statistiques / Statistiques Des Revendeurs / Statistiques Des Utilisateurs / Statistiques De L'Utilisateur {USERNAME}"
 
 msgid "Admin / Statistics / Server Statistics"
 msgstr "Administrateur / Statistiques / Statistiques du serveur"
@@ -1651,7 +1651,7 @@ msgid "Customer account summary"
 msgstr "Récapitulatif du compte client"
 
 msgid "Customer assignments"
-msgstr ""
+msgstr "Assignation des clients"
 
 msgid "Customer consumption"
 msgstr "Consommation du client"
@@ -2111,13 +2111,13 @@ msgid "Edit SSL certificate"
 msgstr "Édition du certificat SSL:"
 
 msgid "Edit admin"
-msgstr "Editer un administrateur"
+msgstr "Editer l'administrateur"
 
 msgid "Edit auto responder"
-msgstr "Éditer le message envoyé par le répondeur automatique"
+msgstr "Éditer la réponse automatique"
 
 msgid "Edit custom DNS record"
-msgstr "Editer l'enregistrement DNS personalisé"
+msgstr "Edition des enrengistrements DNS personnalisés"
 
 msgid "Edit custom error page"
 msgstr "Personalisation de la page d'erreur"
@@ -2132,13 +2132,13 @@ msgid "Edit domain"
 msgstr "Éditer le domaine"
 
 msgid "Edit domain alias"
-msgstr "Éditer les propriété de l'alias de domaine"
+msgstr "Éditer l'alias de domaine"
 
 msgid "Edit error page"
 msgstr "Édition page d'erreur"
 
 msgid "Edit external mail server for {DOMAIN_UTF8}"
-msgstr "Ajouter un serveur e-mail externe pour {DOMAIN_UTF8}"
+msgstr "Éditer le serveur e-mail externe pour {DOMAIN_UTF8}"
 
 msgid "Edit hosting plan"
 msgstr "Édition plan d'hébergement"
@@ -2147,7 +2147,7 @@ msgid "Edit htaccess user"
 msgstr "Éditer l'utilisateur htaccess"
 
 msgid "Edit mail account"
-msgstr "Editer le compte Email"
+msgstr "Editer le compte e-mail"
 
 msgid "Edit mail quota"
 msgstr "Editer les quotas"
@@ -2254,7 +2254,7 @@ msgid "Enable SSL"
 msgstr "Activer SSL"
 
 msgid "Enable auto responder"
-msgstr "Activer le répondeur"
+msgstr "Activer la réponse automatique"
 
 msgid "Enabled"
 msgstr "Activé"
@@ -2566,7 +2566,7 @@ msgid "Hosting plan values exceed your own limits."
 msgstr "Des valeurs du plan d'hébergement dépassent vos propres limites."
 
 msgid "Hosting plans"
-msgstr "Plans d'hébergements"
+msgstr "Plans d'hébergement"
 
 msgid "Hosting plans available for"
 msgstr "Rendre les plans d'hébergement disponibles pour les"
@@ -2631,13 +2631,13 @@ msgid "IP addresses under control of i-MSCP"
 msgstr "Adresses IP contrôlées par i-MSCP"
 
 msgid "IP assignments"
-msgstr ""
+msgstr "Assignation des adresses IP"
 
 msgid "IP management"
 msgstr "Gestion des adresses IP"
 
 msgid "IP usage"
-msgstr "Usage des adresses IP"
+msgstr "Utilisation des adresses IP"
 
 msgid "IPv6 address"
 msgstr "Adresse IPv6"
@@ -2664,7 +2664,7 @@ msgid "Import in local repository"
 msgstr "Importer dans le dépôt local"
 
 msgid "Import new language file"
-msgstr ""
+msgstr "Importer un nouveau ficher de langue"
 
 msgid ""
 "In case domain expiration date is 'N/A', the expiration date will be set "
@@ -3054,7 +3054,7 @@ msgid "Manage SQL"
 msgstr "Databases"
 
 msgid "Manage htaccess users and groups"
-msgstr "Gestion des groupes et des utilisateurs htaccess"
+msgstr "Gestion des groupe et utilisateurs htaccess"
 
 msgid "Manage users"
 msgstr "Utilisateurs"
@@ -3462,7 +3462,7 @@ msgid "PHP settings"
 msgstr "Paramètres PHP"
 
 msgid "POP3/IMAP"
-msgstr ""
+msgstr "POP3/IMAP"
 
 msgid "POP3/IMAP in"
 msgstr "POP3/IMAP entrant"
@@ -3834,7 +3834,7 @@ msgid ""
 "Plugins are developed independently from the core i-MSCP application by "
 "thousands of developers all over the world. You can find new plugins to "
 "install by browsing the %s."
-msgstr "Les extensions permettent d'étendre les fonctionnalitées d'i-MSCP. Les extensions sont développés indépendament du cœur d'i-MSCP  par de nombreux développeurs à travers le monde. Vous pouvez trouver de nouvelles extensions à installer en parcourant %s."
+msgstr "Les extensions permettent d'étendre les fonctionnalitées d'i-MSCP. Les extensions sont développés indépendament du cœur d'i-MSCP  par de nombreux développeurs. Vous pouvez trouver de nouvelles extensions à installer en parcourant le %s."
 
 #, php-format
 msgid ""
@@ -3886,7 +3886,7 @@ msgid "Processor data"
 msgstr "Données du processeur"
 
 msgid "Profile"
-msgstr "Profile"
+msgstr "Profil"
 
 msgid "Properties"
 msgstr "Propriétés"
@@ -4089,7 +4089,7 @@ msgid "Reseller / Statistics / Overview"
 msgstr "Revendeur / Statistiques / Vue générale"
 
 msgid "Reseller / Statistics / Overview / {USERNAME} USER Statistics"
-msgstr ""
+msgstr "Revendeur / Statistiques / Vue Générale / Statistiques De L'Utilisateur {USERNAME}"
 
 msgid "Reseller / Support / Closed Tickets"
 msgstr "Revendeur / Support / Tickets fermés"
@@ -4125,7 +4125,7 @@ msgid "Reseller assignment"
 msgstr "Assignation des revendeurs"
 
 msgid "Reseller assignments"
-msgstr ""
+msgstr "Assignation des revendeurs"
 
 msgid "Reseller consumption"
 msgstr "Consommation du revendeur"
@@ -4453,7 +4453,7 @@ msgid "Show detailed statistics for this reseller"
 msgstr "Afficher des statistiques détaillées pour ce revendeur"
 
 msgid "Show detailed statistics for this user"
-msgstr ""
+msgstr "Afficher les statistiques détaillées pour cet utilisateur"
 
 msgid "Show in"
 msgstr "Afficher dans"
@@ -5031,7 +5031,7 @@ msgid "Traffic"
 msgstr "Trafic"
 
 msgid "Traffic statistics"
-msgstr ""
+msgstr "Statistiques du trafic"
 
 msgid "Traffic usage"
 msgstr "Utilisation du trafic"
@@ -5388,7 +5388,7 @@ msgid "User session successfully killed for password change."
 msgstr "La session de l'utilisateur a bien été supprimé pour le renouvellement du mot de passe."
 
 msgid "User statistics"
-msgstr ""
+msgstr "Statistics des utilisateurs"
 
 msgid "User successfully disconnected."
 msgstr "L'utilisateur a été déconnecté."
@@ -6157,7 +6157,7 @@ msgid "{RESELLER} uploaded a new software package"
 msgstr "{RESELLER} a téléversé un nouveau logiciel"
 
 msgid "{USERNAME} user statistics"
-msgstr ""
+msgstr "Statistiques de l'utilsateur {USERNAME}"
 
 msgid "© 2010-2015 i-MSCP Team<br/>All Rights Reserved"
 msgstr "© 2010-2015 Équipe i-MSCP<br/>Tous droits réservés"

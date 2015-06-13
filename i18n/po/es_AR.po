@@ -4,13 +4,15 @@
 # 
 # Translators:
 # Damian Axel Xavier <dax@barrio-maritimo.com.ar>, 2011-2012,2015
+# i-MSCP <team@i-mscp.net>, 2015
 # Laurent Declercq <l.declercq@nuxwin.com>, 2015
+# Miguel Angel <piradoxlanieve@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-08 13:08+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: Spanish (Argentina) (http://www.transifex.com/projects/p/i-MSCP/language/es_AR/)\n"
 "MIME-Version: 1.0\n"
@@ -631,7 +633,7 @@ msgid "Add email account"
 msgstr "Añadir Cuenta de correo"
 
 msgid "Add external mail server for {DOMAIN_UTF8}"
-msgstr "Añadir servidor de mail externo para {DOMAIN_UTF8}"
+msgstr "Añadir servidor de correo externo para {DOMAIN_UTF8}"
 
 msgid "Add group"
 msgstr "Añadir grupo"
@@ -760,12 +762,12 @@ msgid "Admin / Statistics / Reseller Statistics"
 msgstr "Administrador / Estadísticas / Estadísticas de Revendedor"
 
 msgid "Admin / Statistics / Reseller Statistics / User Statistics"
-msgstr ""
+msgstr "Administrador / Estadísticas / Estadísticas del Revendedor / Estadísticas del Usuario"
 
 msgid ""
 "Admin / Statistics / Reseller Statistics / User Statistics / {USERNAME} user"
 " statistics"
-msgstr ""
+msgstr "Administrador / Estadísticas / Estadísticas del Revendedor / Estadísticas del Usuario / {USERNAME} estadísticas del usuario"
 
 msgid "Admin / Statistics / Server Statistics"
 msgstr "Administrador / Estadísticas / Estadísticas de Servidor"
@@ -837,7 +839,7 @@ msgid "Admin account successfully created."
 msgstr "Cuenta de Administrador creada satisfactoriamente"
 
 msgid "Admin log"
-msgstr "Log de administración"
+msgstr "Registro del administrador"
 
 msgid "Admin not available"
 msgstr "Administrador no disponible"
@@ -1640,7 +1642,7 @@ msgid "Customer account summary"
 msgstr "Sumario Cuenta del Cliente"
 
 msgid "Customer assignments"
-msgstr ""
+msgstr "Asignación de clientes"
 
 msgid "Customer consumption"
 msgstr "Consumo del Cliente"
@@ -2620,7 +2622,7 @@ msgid "IP addresses under control of i-MSCP"
 msgstr "Dirección IP bajo el control de i-MSCP"
 
 msgid "IP assignments"
-msgstr ""
+msgstr "Administrar IP"
 
 msgid "IP management"
 msgstr "Administrar IP"
@@ -2653,7 +2655,7 @@ msgid "Import in local repository"
 msgstr "Importar a repositorio local"
 
 msgid "Import new language file"
-msgstr ""
+msgstr "Importar nuevo idioma"
 
 msgid ""
 "In case domain expiration date is 'N/A', the expiration date will be set "
@@ -3451,7 +3453,7 @@ msgid "PHP settings"
 msgstr "Configuraciones PHP"
 
 msgid "POP3/IMAP"
-msgstr ""
+msgstr "POP3/IMAP"
 
 msgid "POP3/IMAP in"
 msgstr "POP3/IMAP entrante"
@@ -4078,7 +4080,7 @@ msgid "Reseller / Statistics / Overview"
 msgstr "Revendedor / Estadísticas / Resumen"
 
 msgid "Reseller / Statistics / Overview / {USERNAME} USER Statistics"
-msgstr ""
+msgstr "Revendedor / Estadísticas / Descripción / {USERNAME} Estadísticas del Usuario"
 
 msgid "Reseller / Support / Closed Tickets"
 msgstr "Revendedor / Soporte / Tickets Cerrados"
@@ -4114,7 +4116,7 @@ msgid "Reseller assignment"
 msgstr "Asignar revendedor"
 
 msgid "Reseller assignments"
-msgstr ""
+msgstr "Asignar revendedor"
 
 msgid "Reseller consumption"
 msgstr "Consumo del Revendedor"
@@ -4442,7 +4444,7 @@ msgid "Show detailed statistics for this reseller"
 msgstr "Mostrar estadísticas detalladas para este revendedor"
 
 msgid "Show detailed statistics for this user"
-msgstr ""
+msgstr "Mostrar estadísticas detalladas para este usuario"
 
 msgid "Show in"
 msgstr "Ver contenido"
@@ -5020,7 +5022,7 @@ msgid "Traffic"
 msgstr "Trafico"
 
 msgid "Traffic statistics"
-msgstr ""
+msgstr "Estadísticas diarias"
 
 msgid "Traffic usage"
 msgstr "Trafico (uso)"
@@ -5377,7 +5379,7 @@ msgid "User session successfully killed for password change."
 msgstr "Sesión de usuario eliminada por cambio de contraseña."
 
 msgid "User statistics"
-msgstr ""
+msgstr "Estadísticas de revendedor"
 
 msgid "User successfully disconnected."
 msgstr "Usuario desconectado satisfactoriamente."
@@ -6146,7 +6148,7 @@ msgid "{RESELLER} uploaded a new software package"
 msgstr "{RESELLER} ha subido un nuevo paquete de software"
 
 msgid "{USERNAME} user statistics"
-msgstr ""
+msgstr "{USERNAME}  Estadísticas"
 
 msgid "© 2010-2015 i-MSCP Team<br/>All Rights Reserved"
 msgstr "© 2010-2015 Equipo i-MSCP<br/>Todos los Derechos Reservados"

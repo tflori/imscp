@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# i-MSCP <team@i-mscp.net>, 2015
 # Jari <info@jkwebdesign.fi>, 2013
 # Laurent Declercq <l.declercq@nuxwin.com>, 2013
 # Toni Rissanen <toni.rissanen@arkku.net>, 2015
@@ -11,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: i-MSCP\n"
 "Report-Msgid-Bugs-To: i18n@i-mscp.net\n"
-"POT-Creation-Date: 2015-06-04 21:18+0200\n"
-"PO-Revision-Date: 2015-06-04 19:21+0000\n"
+"POT-Creation-Date: 2015-06-12 03:28+0200\n"
+"PO-Revision-Date: 2015-06-08 13:41+0000\n"
 "Last-Translator: i-MSCP <team@i-mscp.net>\n"
 "Language-Team: Finnish (Finland) (http://www.transifex.com/projects/p/i-MSCP/language/fi_FI/)\n"
 "MIME-Version: 1.0\n"
@@ -588,7 +589,7 @@ msgid "Add / Edit SSL certificate"
 msgstr "Lisää / Muokkaa SSL-sertifikaattia"
 
 msgid "Add FTP account"
-msgstr "Lisää FTP-tili"
+msgstr "Lisää FTP tili"
 
 msgid "Add Htaccess group"
 msgstr "Lisää htaccess -ryhmä"
@@ -639,7 +640,7 @@ msgid "Add group"
 msgstr "Lisää ryhmä"
 
 msgid "Add hosting plan"
-msgstr "Lisää palvelupaketti"
+msgstr "Lisää hosting-paketti"
 
 msgid "Add new IP address"
 msgstr "Lisää uusi IP osoite"
@@ -839,7 +840,7 @@ msgid "Admin account successfully created."
 msgstr "Ylläpitäjän -tunnus luotu onnistuneesti."
 
 msgid "Admin log"
-msgstr "Tapahtumaloki"
+msgstr "Ylläpitologi"
 
 msgid "Admin not available"
 msgstr "Admin ei tavoitettavissa"
@@ -1814,7 +1815,7 @@ msgid ""
 msgstr ""
 
 msgid "Debugger"
-msgstr "Virheiden selvitys"
+msgstr "Debugger"
 
 msgid "Default language"
 msgstr "Oletuskieli"
@@ -2129,7 +2130,7 @@ msgid "Edit error page"
 msgstr "Muokkaa virhesivua"
 
 msgid "Edit external mail server for {DOMAIN_UTF8}"
-msgstr "Muokkaa ulkoisia sähköpostipalvelimia domainille {DOMAIN_UTF8}"
+msgstr ""
 
 msgid "Edit hosting plan"
 msgstr "Muokkaa palvelupakettia"
@@ -2557,7 +2558,7 @@ msgid "Hosting plan values exceed your own limits."
 msgstr "Palvelupaketin rajat ylittävät käytössä olevat resurssisi."
 
 msgid "Hosting plans"
-msgstr "Palvelupaketit"
+msgstr "Hosting-paketit"
 
 msgid "Hosting plans available for"
 msgstr "Tarjolla olevat palvelupaketit"
@@ -2628,7 +2629,7 @@ msgid "IP management"
 msgstr "IP-hallinta"
 
 msgid "IP usage"
-msgstr "IP-osoitteiden käyttö"
+msgstr "IP käyttö"
 
 msgid "IPv6 address"
 msgstr "IPv6 osoite"
@@ -2876,7 +2877,7 @@ msgid "Language successfully updated."
 msgstr "Kielitiedosto on päivitetty onnistuneesti."
 
 msgid "Languages"
-msgstr "Kieli"
+msgstr ""
 
 msgid "Languages index was successfully re-built."
 msgstr "Käännökset rakennettiiin uudestaan onnistuneesti"
@@ -3598,7 +3599,7 @@ msgid "Phone"
 msgstr "Puhelin"
 
 msgid "PhpMyAdmin"
-msgstr "phpMyAdmin"
+msgstr "PhpMyAdmin"
 
 msgid "PiB"
 msgstr "PiB"
@@ -3814,7 +3815,7 @@ msgid "Plugin list is empty."
 msgstr "Liitännäisten lista on tyhjä."
 
 msgid "Plugin management"
-msgstr "Liitännäisten hallinta"
+msgstr ""
 
 msgid "Plugins Upload"
 msgstr "Liitännäisten lataus palvelimelle"
@@ -4401,7 +4402,7 @@ msgid "Service protocol"
 msgstr "Palvelun protolla"
 
 msgid "Services status"
-msgstr "Palveluiden tila"
+msgstr "Palvelun tila"
 
 msgid "Sessions"
 msgstr "Istunnot"

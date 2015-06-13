@@ -23,12 +23,6 @@ Listener file that allows to override Apache2 ServerAlias directive value.
 
 Listener file that allows to change the domain redirect type in customers's vhost files from 302 to 301.
 
-## GitLab listeners
-
-###10_gitlab.pl
-
-Listener file that allows to start/stop GitLab when updating i-MSCP.
-
 ## Named listeners
 
 ### 10_bind9_localnets.pl
@@ -42,6 +36,14 @@ Listener file that allows to replace defaults **@ IN <IP>** DNS record with a cu
 ### 20_bind9_dualstack.pl
 
 Listener file that provides dual stack support for bind9.
+
+### 10_named_zonetransfer.pl
+
+Listener file that provides zone output for zone transfer to secondary nameserver (zone provisioning).
+
+### 10_named_tuning2.pl
+
+Listener file that modifies the zone files, removes default nameservers and adds custom out-of-zone nameservers.
 
 ## Postfix listeners
 
