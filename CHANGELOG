@@ -5,17 +5,21 @@ Git 1.2.x
 ------------------------------------------------------------------------------------------------------------------------
 
 BACKEND
-	Fixed: Bad SQL query which leads to orphaned entries in the admin table, and which is cause of several side effects
-		such as many bad request errors (e.g: when editing a reseller, or when accessing its statistics...)
+	Fixed: Bad SQL query which leads to orphaned entries in the admin table, and which is the cause of several side
+		effects such as many bad request errors (e.g: when editing a reseller, or when accessing its statistics...)
 	Fixed: Usage of portable syntax over Bash 4 syntax (I/O Redirection)
 	Fixed: Wrong syntax for the nice command (at several places)
 
+DATABASE
+	Fixed: Do not try to remove inexistent indexes +++
+
 FRONTEND
-	Fixed: ID mismatch when the created_by field of a reseller is unknown (edit and delete links)
 	Fixed: Don't add the default ports (80/443) in notifications when not needed (e.g: when using PanelRedirect plugin)
+	Fixed: ID mismatch when the created_by field of a reseller is unknown (edit and delete links)
+
 i18N
 	Removed: Untranslated languages - Breton (br), Czech (cz), Galician (gl), Georgian (ka), Hebrew (he_IL),
-		Icelandic (is_IS), Serbian (sr) and Spanish (es)
+		Icelandic (is_IS), Spanish (es), and Serbian (sr)
 
 YOUTRACK
 	Fixed: #IP-1357: Built in Support Ticket shows wrong URL (missing Control Panel Port)
