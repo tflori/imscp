@@ -4,6 +4,18 @@
 Git 1.2.x
 ------------------------------------------------------------------------------------------------------------------------
 
+DATABASE
+	Fixed: Mysql IGNORE extension doesn't work with Fast Index Creation (MySQL Bug #40344)
+	Fixed: MySQL IGNORE extension is deprecated as of MySQL 5.6.17
+	Fixed: Possible duplicate entries when adding UNIQUE constraints
+
+------------------------------------------------------------------------------------------------------------------------
+1.2.5
+------------------------------------------------------------------------------------------------------------------------
+
+2015-06-14: Laurent Declercq
+	RELEASE i-MSCP 1.2.5
+
 BACKEND
 	Fixed: Bad SQL query which leads to orphaned entries in the admin table, and which is the cause of several side
 		effects such as many bad request errors (e.g: when editing a reseller, or when accessing its statistics...)
