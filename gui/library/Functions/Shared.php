@@ -2660,7 +2660,9 @@ function send_request()
 
 		socket_close($socket);
 	} else {
-		write_log(sprintf('Unable to send request: %s', socket_strerror(socket_last_error())), E_USER_ERROR);
+		write_log(sprintf(
+			'Unable to connect to the i-MSCP daemon: %s', socket_strerror(socket_last_error())), E_USER_ERROR
+		);
 		$ret = false;
 	}
 
@@ -2955,7 +2957,6 @@ function getDataTablesPluginTranslations($json = true)
 			'Show %s records per page',
 			'
 				<select>
-				<option value="5">5</option>
 				<option value="10">10</option>
 				<option value="15">15</option>
 				<option value="20">20</option>
@@ -2965,13 +2966,13 @@ function getDataTablesPluginTranslations($json = true)
 			'
 		),
 		//'sLengthMenu' => tr('Show %s records per page', '_MENU_'),
-		'sZeroRecords' => tr('Nothing found - sorry'),
-		'sInfo' => tr('Showing %s to %s of %s records', '_START_', '_END_', '_TOTAL_'),
-		'sInfoEmpty' => tr('Showing 0 to 0 of 0 records'),
-		'sInfoFiltered' => tr('(filtered from %s total records)', '_MAX_'),
-		'sSearch' => tr('Search'),
-		'oPaginate' => array('sPrevious' => tr('Previous'), 'sNext' => tr('Next')),
-		'sProcessing' => tr('Loading data...')
+		'zeroRecords' => tr('Nothing found - sorry'),
+		'info' => tr('Showing %s to %s of %s records', '_START_', '_END_', '_TOTAL_'),
+		'infoEmpty' => tr('Showing 0 to 0 of 0 records'),
+		'infoFiltered' => tr('(filtered from %s total records)', '_MAX_'),
+		'search' => tr('Search'),
+		'paginate' => array('previous' => tr('Previous'), 'next' => tr('Next')),
+		'processing' => tr('Loading data...')
 	);
 
 	return ($json) ? json_encode($tr) : $tr;

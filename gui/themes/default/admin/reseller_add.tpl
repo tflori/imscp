@@ -350,7 +350,7 @@
 </form>
 
 <script>
-	$(document).ready(function () {
+	$(function () {
 		var errFieldsStack = {ERR_FIELDS_STACK};
 		$.each(errFieldsStack, function () { $('#' + this).css('border-color', '#ca1d11'); });
 
@@ -418,9 +418,9 @@
 
 		$('#reseller_ips_table').dataTable(
 			{
-				"oLanguage": {DATATABLE_TRANSLATIONS},
-				"bStateSave": true,
-				"pagingType": "simple"
+				language: imscp_i18n.core.dataTable,
+				stateSave: true,
+				pagingType: "simple"
 			}
 		);
 	});
