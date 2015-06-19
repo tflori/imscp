@@ -4,6 +4,25 @@
 Git 1.2.x
 ------------------------------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------------
+1.2.7
+------------------------------------------------------------------------------------------------------------------------
+
+2015-06-19: Laurent Declercq
+	RELEASE i-MSCP 1.2.7
+
+BACKEND
+	Fixed: BASE_SERVER_VHOST placeholder is not replaced in vhost files (httpd server implementations)
+	Fixed: Unable to delete domain alias - Can't locate object method _getSharedMountPoints via package Modules::Alias
+	Fixed: Unable to delete subdomain - Can't locate object method _getSharedMountPoints via package Modules::Subdomain
+
+------------------------------------------------------------------------------------------------------------------------
+1.2.6
+------------------------------------------------------------------------------------------------------------------------
+
+2015-06-18: Laurent Declercq
+	RELEASE i-MSCP 1.2.6
+
 BACKEND
 	Changed: Primary phptmp directory is now used by all PHP sites
 	Fixed: Wrong TMPDIR set in fcgi starter script for domains which use mount point of another domain
@@ -22,7 +41,7 @@ DATABASE
 	Fixed: Possible duplicate entries when adding UNIQUE constraints
 
 FRONTEND
-	Changed: Increased number of items to display by default in data tables ( previous value was 5, it is now 10)
+	Changed: Increased number of items to display by default in data tables (previous value was 5, it is now 10)
 
 YOUTRACK
 	Fixed: #IP-1358: Admin's tickets can't be deleted due to an additional quotation-mark in the template
